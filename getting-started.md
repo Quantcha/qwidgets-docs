@@ -12,7 +12,7 @@ Qwidgets is free, and most of it works without an account. Open it and start wit
 
 [Open Qwidgets]({{ site.app_url }}){: .btn .btn-primary target="_blank" rel="noopener" }
 
-{% include shot.html id="home-guest" alt="The Qwidgets home page for a visitor who isn't signed in, with sections for workspaces, equity tools, equity accounts, prediction markets, and AI compute." caption="The home page links to every part of Qwidgets. Cards marked **Login** need a sign-in." %}
+{% include shot.html id="home-guest" alt="The Qwidgets home page for a visitor who isn't signed in, with sections for workspaces, equity tools, equity accounts, prediction markets, and AI compute." caption="The home page links to every part of Qwidgets." %}
 
 ## What you can do right away
 
