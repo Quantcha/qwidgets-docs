@@ -1,0 +1,11 @@
+question: Someone sends you a link to a shared Qwidgets workspace. What do you need to open it?
+choices:
+  - text: Nothing. The link opens in your browser as a guest.
+    correct: true
+    explanation: Shared workspaces open for anyone with the link, no sign-in needed.
+  - text: A Qwidgets sign-in.
+    correct: false
+    explanation: Signing in is only needed to keep a copy of the workspace with **Copy To My Workspaces**.
+  - text: A connected brokerage account.
+    correct: false
+    explanation: A connection adds your own positions and balances to Qwidgets. It isn't needed to view someone else's workspace.

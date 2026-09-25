@@ -1,0 +1,14 @@
+{%- comment -%}
+  A screenshot produced by the capture harness.
+  Usage: {% include shot.html id="equity-book-overview" alt="…" caption="…" %}
+  The image lives at assets/images/<section>/<id>.png. `section` defaults to the page's
+  front-matter `section`; pass section="…" to override.
+{%- endcomment -%}
+{%- assign shot_section = include.section | default: page.section -%}
+<figure class="qw-shot">
+  <img src="{{ '/assets/images/' | append: shot_section | append: '/' | append: include.id | append: '.png' | relative_url }}"
+       alt="{{ include.alt | escape }}" loading="lazy">
+  {%- if include.caption %}
+  <figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
+  {%- endif %}
+</figure>

@@ -1,0 +1,29 @@
+{%- comment -%}
+  An optional "Check your understanding" question.
+  Usage: {% include quiz.html id="stress-test-basics" %}
+  Data: _data/quizzes/<id>.yml with `question` and `choices[]` (`text`, `correct`, `explanation`).
+  Choosing an answer only marks it; Check reveals that choice's explanation.
+{%- endcomment -%}
+{%- assign quiz = site.data.quizzes[include.id] -%}
+{%- if quiz -%}
+<aside class="qw-quiz" data-quiz="{{ include.id }}">
+  <p class="qw-quiz-label">Check your understanding <span class="qw-quiz-optional">(optional)</span></p>
+  <form class="qw-quiz-form" novalidate>
+    <fieldset>
+      <legend>{{ quiz.question | markdownify | remove: '<p>' | remove: '</p>' | strip }}</legend>
+      {%- for choice in quiz.choices %}
+      {%- assign choice_id = include.id | append: '-' | append: forloop.index %}
+      <div class="qw-quiz-choice">
+        <input type="radio" name="{{ include.id }}" id="{{ choice_id }}" value="{{ forloop.index }}">
+        <label for="{{ choice_id }}">{{ choice.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</label>
+        <template class="qw-quiz-explanation" data-correct="{{ choice.correct | default: false }}">{{ choice.explanation | markdownify }}</template>
+      </div>
+      {%- endfor %}
+    </fieldset>
+    <button type="submit" class="btn btn-primary qw-quiz-check">Check</button>
+  </form>
+  <div class="qw-quiz-feedback" aria-live="polite"></div>
+</aside>
+{%- else -%}
+<p class="qw-quiz-missing">Quiz <code>{{ include.id }}</code> not found in <code>_data/quizzes/</code>.</p>
+{%- endif -%}
