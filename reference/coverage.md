@@ -39,7 +39,7 @@ Single orders can be limit, market, stop, or stop limit. Multi-leg and combined 
 
 ## Market data without a brokerage
 
-Without a connected brokerage, stock and option data comes from a delayed feed that refreshes about once a minute. It includes:
+Without a connected brokerage, stock and option data comes from a delayed feed: at least 20 minutes behind the market, and updated intermittently. It includes:
 
 - Quotes for US stocks and ETFs
 - Option chains with Greeks

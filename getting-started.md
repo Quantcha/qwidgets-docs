@@ -22,7 +22,7 @@ Without signing in, you can use:
 - **Prediction markets.** Browse events and markets from Kalshi, Polymarket, and more, compare prices across exchanges, and read order books and price history. See [Prediction markets]({{ '/prediction-markets/' | relative_url }}).
 - **Workspaces.** Open a workspace someone shared with you, or build one in the **Guest Workspace**. See [Workspaces]({{ '/workspaces/' | relative_url }}).
 
-Without a connected brokerage, stock and option data comes from a delayed feed that refreshes about once a minute.
+Without a connected brokerage, stock and option data comes from a delayed feed: at least 20 minutes behind the market, and updated intermittently.
 
 {: .note }
 A guest workspace is kept only in the browser tab you built it in. Closing the tab clears it. Sign in to save your work.

@@ -17,7 +17,7 @@ Every figure Qwidgets computes is a model output. Models simplify, and the secti
 
 ## Data
 
-- **Delayed data.** Without a connected brokerage, stock and option data comes from a delayed feed that refreshes about once a minute. Don't treat it as a live price.
+- **Delayed data.** Without a connected brokerage, stock and option data comes from a delayed feed that is at least 20 minutes behind the market and updated intermittently. Don't treat it as a live price.
 - **Brokerage data.** With a connected brokerage, quotes refresh about every 15 seconds, account data about every 30 seconds, and orders about every 10 seconds. Balances, positions, and orders are what your brokerage reports.
 - **Market hours.** Stock quotes and account data refresh during regular trading hours on weekdays, and pause outside them. Early closes aren't accounted for, so data may keep refreshing after an early close.
 - **Prediction markets.** Market data refreshes every few seconds to every few minutes depending on the view, and streams live where the exchange supports it. See the [Coverage Matrix]({{ '/reference/coverage/' | relative_url }}).
