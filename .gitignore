@@ -1,0 +1,6 @@
+.vs/
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
