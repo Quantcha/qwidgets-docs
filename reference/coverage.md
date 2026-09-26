@@ -22,7 +22,7 @@ Connect a brokerage to see your positions, balances, and orders, trade from Qwid
 | Order preview before placing | No | Yes | Yes |
 | Transaction history for performance tracking | Full history, updated during the day | Last 3 years, updated during the day | Full history, updated nightly |
 | Price history charts | Yes | No | Yes |
-| How often you reconnect | Every 7 days | Every day (access ends at midnight Eastern) | Not needed |
+| How often you reconnect | Every 7 days | Every 30 days | Not needed |
 
 Positions from several brokerage accounts appear side by side in Qwidgets.
 
