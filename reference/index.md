@@ -4,10 +4,11 @@ permalink: /reference/
 nav_order: 12
 has_children: true
 section: reference
-placeholder: true
-sitemap: false
+description: What Qwidgets connects to, the terms it uses, and what its models assume.
 ---
+
 # Reference
 
-{: .note }
-This page hasn't been written yet.
+- [Coverage Matrix]({{ '/reference/coverage/' | relative_url }}): every brokerage, exchange, and data provider Qwidgets connects to, and what each one supports.
+- [Glossary]({{ '/reference/glossary/' | relative_url }}): the terms used across the app and these docs.
+- [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): where the figures come from, what the models assume, and where they stop being reliable.
