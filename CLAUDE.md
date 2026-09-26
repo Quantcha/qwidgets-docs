@@ -21,7 +21,7 @@ sitemap: false                  # until the page has content: keeps it out of th
 - When a page gets real content, remove `placeholder` and `sitemap: false`.
 - Widget pages live at `/widgets/<registry-key-in-kebab-case>/` and carry `widget_key` with the registry key. Their URLs are permanent; a widget rename changes the title, never the permalink.
 - Link into the app with `{{ site.app_url }}`, never a hardcoded host.
-- Screenshots: `{% include shot.html id="<shot-id>" alt="…" caption="…" %}`. The image is `assets/images/<section>/<shot-id>.png`. Alt text describes what the screenshot shows.
+- Screenshots: `{% include shot.html id="<shot-id>" alt="…" caption="…" %}`. The image is `assets/images/<section>/<shot-id>.png`. Alt text describes what the screenshot shows. Diagrams are SVGs in the same folder, included with `ext="svg"`.
 - Optional quizzes: `{% include quiz.html id="<quiz-id>" %}` with data in `_data/quizzes/<quiz-id>.yml` (`question`, and `choices` each with `text`, `correct`, `explanation`). Every choice explains itself, right or wrong.
 - Callouts: `{: .note }`, `{: .tip }`, `{: .important }`, `{: .warning }` on the line before a paragraph.
 
