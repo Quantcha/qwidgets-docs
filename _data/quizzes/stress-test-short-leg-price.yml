@@ -1,0 +1,14 @@
+question: You stress test a calendar spread to a date a week after its short call expires, with the underlying set to fall. Which price decides whether the short call finished in the money?
+choices:
+  - text: The target price you set.
+    correct: false
+    explanation: That's where the underlying ends up on the target date. The short call expired a week earlier, before the underlying got there.
+  - text: The price the underlying reached on the short call's expiration date, on the way to the target.
+    correct: true
+    explanation: Each name moves along a path from today's price to its target, and a contract that expires on the way settles at the price the path reached that day. The row shows that price.
+  - text: The underlying's price today.
+    correct: false
+    explanation: Today's price is only where the path starts. By the short call's expiration, the path has already covered part of the move.
+  - text: None. It's still priced as an option on the target date.
+    correct: false
+    explanation: Only contracts still open on the target date are priced as options. One that expires before it settles at its own expiration, and the row is tagged with what happened.
