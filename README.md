@@ -24,3 +24,7 @@ docker run --rm -it -p 4000:4000 -v "$PWD":/srv/jekyll -w /srv/jekyll ruby:3.3 s
 ## Writing pages
 
 See [CLAUDE.md](CLAUDE.md) for page front matter, the screenshot and quiz includes, and the content rules.
+
+## Publishing
+
+GitHub Pages builds `main` from the repository root with its native Jekyll build; there's no Actions workflow. `CNAME` sets the custom domain, `docs.qwidgets.com`. Anything merged to `main` is live within minutes.
