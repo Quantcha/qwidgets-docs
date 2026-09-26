@@ -3,8 +3,8 @@ description: How to use Qwidgets to plan, track, and manage your investments.
 url: https://docs.qwidgets.com
 baseurl: ""
 
-# Every link into the app uses {{ site.app_url }}. The www.qwidgets.com cutover is this one line.
-app_url: https://predictions.qwidgets.com
+# Every link into the app uses {{ site.app_url }}, so a change of app host is this one line.
+app_url: https://www.qwidgets.com
 
 remote_theme: just-the-docs/just-the-docs@v0.12.0
 

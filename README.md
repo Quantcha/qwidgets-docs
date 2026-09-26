@@ -1,6 +1,6 @@
 # Qwidgets Docs
 
-Source for [docs.qwidgets.com](https://docs.qwidgets.com), the documentation for [Qwidgets](https://predictions.qwidgets.com). It's a [Jekyll](https://jekyllrb.com/) site using the [Just the Docs](https://just-the-docs.com/) theme, published by GitHub Pages from `main`.
+Source for [docs.qwidgets.com](https://docs.qwidgets.com), the documentation for [Qwidgets](https://www.qwidgets.com). It's a [Jekyll](https://jekyllrb.com/) site using the [Just the Docs](https://just-the-docs.com/) theme, published by GitHub Pages from `main`.
 
 ## Preview locally
 
