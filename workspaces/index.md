@@ -17,7 +17,7 @@ A workspace is a canvas where you compose widgets into one view: quotes, charts,
 
 - **Guest Workspace.** Build one without signing in. It's kept only in the browser tab you built it in.
 - **My Workspaces.** Once you sign in, workspaces you create are saved to your account and follow you across devices.
-- **Shared workspaces.** Anyone can open a workspace its owner has shared, by its link, with no account. [Browse Shared]({{ '/workspaces/copying/' | relative_url }}) lists the ones in the public catalog.
+- **Shared workspaces.** Anyone can open a workspace its owner has shared, by its link, with no account. [Browse Shared]({{ '/workspaces/copying/' | relative_url }}) lists the ones in the public catalog. What a viewer changes, or copies to their own account, never alters the owner's workspace, and the owner's account data never comes with it.
 
 ## In this section
 

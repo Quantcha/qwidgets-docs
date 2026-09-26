@@ -31,7 +31,7 @@ Copying needs a sign-in. If you aren't signed in, sign in or register first, the
 
 ## What doesn't come with it
 
-Shared workspaces never carry their owner's account connections.
+Shared workspaces never carry their owner's account data. Account connections, account numbers, and any keys or tokens are removed from every widget before the workspace reaches you.
 
 - **Stock and option widgets** that used the owner's brokerage show delayed data instead. To use your own brokerage, open the widget's **Configure** dialog and choose it as the provider.
 - **Account widgets**, such as Portfolio or Prediction Account, show **Click to configure**. Configure them with your own account, or remove them.
