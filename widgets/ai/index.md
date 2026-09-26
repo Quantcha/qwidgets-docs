@@ -5,10 +5,9 @@ permalink: /widgets/groups/ai/
 nav_order: 6
 has_children: true
 section: widgets
-placeholder: true
-sitemap: false
+description: "One-shot prompts to your own AI model."
 ---
+
 # AI widgets
 
-{: .note }
-This page hasn't been written yet.
+Ask your own AI model a question from a workspace. These widgets use an AI integration with your own key; see [Accounts and connections]({{ '/accounts/' | relative_url }}).

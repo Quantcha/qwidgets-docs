@@ -5,10 +5,9 @@ permalink: /widgets/groups/prediction-account/
 nav_order: 2
 has_children: true
 section: widgets
-placeholder: true
-sitemap: false
+description: "Your Kalshi account on a workspace: balance, portfolio, orders, trading, and the Distribution Builder."
 ---
+
 # Prediction Account widgets
 
-{: .note }
-This page hasn't been written yet.
+These widgets put your Kalshi account on a workspace, beside the markets you follow. They need a connected Kalshi account; see [Kalshi account]({{ '/accounts/kalshi/' | relative_url }}). Qwidgets never moves money in or out of it.

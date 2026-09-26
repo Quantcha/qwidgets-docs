@@ -5,10 +5,9 @@ permalink: /widgets/groups/equities-data/
 nav_order: 3
 has_children: true
 section: widgets
-placeholder: true
-sitemap: false
+description: "Quotes, charts, option chains, the trade screener, and trade analysis."
 ---
+
 # Equities Data widgets
 
-{: .note }
-This page hasn't been written yet.
+These widgets show stock and option market data. They use a delayed feed with no account, and real-time data from a connected brokerage; each widget's **Provider** setting chooses. See [Equities]({{ '/equities/' | relative_url }}) and [Options]({{ '/options/' | relative_url }}) for the pages they mirror.
