@@ -25,10 +25,11 @@ Know what a trade does before you place it, and find trades you wouldn't build b
 
 ## Track
 
-Watch everything in one place, and see how each position went.
+Watch everything in one place, and see how each campaign went.
 
 - [Workspaces]({{ '/workspaces/' | relative_url }}): compose widgets into a view you return to, and share it by link.
 - [Accounts and connections]({{ '/accounts/' | relative_url }}): connect Schwab, E\*TRADE, and more for your own positions, orders, and performance.
+- [Performance]({{ '/accounts/brokerage/performance/' | relative_url }}) and the [Campaign Journal]({{ '/accounts/brokerage/campaign-journal/' | relative_url }}): replay each campaign leg by leg, and measure what's working across them. They need a connected brokerage.
 
 ## Manage
 
