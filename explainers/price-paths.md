@@ -46,11 +46,17 @@ How far a path has traveled by each date follows the market's own volatility to 
 
 What a sweep can't show is a path that changes direction: one that rallies through the front expiration and falls back by the target. Every path in the sweep moves one way.
 
+{% include shot.html id="price-paths-sweep" ext="svg" alt="A price sweep for a stock at 100 with a short call expiring in three weeks and a target in eight: thirteen straight-line paths fan out from today, each keeping the same number of standard deviations from the forward at the short call's expiration and at the target, brightest near the middle." caption="Illustration: a $100 stock at 30% volatility, drawn from the same formulas the book uses." %}
+
 ### Monte Carlo
 
 Random paths, each stepped from one key date to the next, so a path can rise into an expiration and fall after it. That's exactly the case a sweep leaves out. All paths count equally, and **Chance of gain** is the share of them that end above the book's value now.
 
 Random paths don't line up by final price, so they don't make a curve; the chart is drawn by the price sweep. Monte Carlo paths move at one volatility, the market's to the target date, rather than following the term structure.
+
+Each step starts from where the path is, not from today's price, so a path that has fallen keeps moving from its lower price. The size of the next move, measured as a percentage, doesn't depend on which way the path went before.
+
+{% include shot.html id="price-paths-monte-carlo" ext="svg" alt="Thirty Monte Carlo paths for the same stock, each stepping from today to the short call's expiration and then to the target. Five highlighted paths were clearly on one side of the strike when the short call expired and finish on the other." caption="The highlighted paths are the case a sweep can't draw: the short call settles on one side of the strike, and the stock finishes on the other." %}
 
 ## Two volatilities
 
