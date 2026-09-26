@@ -1,0 +1,35 @@
+// Qwidgets dark scheme. Matches the app's default theme: PrimeNG Aura with its blue primary
+// on zinc surfaces, the Lato typeface.
+@import "./color_schemes/dark";
+
+$color-scheme: dark;
+
+// Aura zinc surfaces
+$qw-surface-950: #09090b;
+$qw-surface-900: #18181b;
+$qw-surface-800: #27272a;
+$qw-surface-700: #3f3f46;
+$qw-surface-400: #a1a1aa;
+$qw-surface-300: #d4d4d8;
+$qw-surface-0: #ffffff;
+
+// Aura blue primary (dark mode uses the 400 step)
+$qw-primary: #60a5fa;
+$qw-primary-strong: #3b82f6;
+
+$body-background-color: $qw-surface-950;
+$sidebar-color: $qw-surface-900;
+$search-background-color: $qw-surface-900;
+$table-background-color: $qw-surface-900;
+$code-background-color: $qw-surface-900;
+$feedback-color: $qw-surface-800;
+$border-color: $qw-surface-800;
+
+$body-heading-color: $qw-surface-0;
+$body-text-color: $qw-surface-300;
+$link-color: $qw-primary;
+$nav-child-link-color: $qw-surface-400;
+$search-result-preview-color: $qw-surface-400;
+
+$btn-primary-color: $qw-primary-strong;
+$base-button-color: $qw-surface-800;

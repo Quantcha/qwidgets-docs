@@ -1,0 +1,109 @@
+// Screenshots
+.qw-shot {
+  margin: 1.5rem 0;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    color: $nav-child-link-color;
+    font-size: 0.875rem;
+  }
+}
+
+// "Check your understanding" quizzes
+.qw-quiz {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  background: $sidebar-color;
+  border: 1px solid $border-color;
+  border-left: 4px solid $link-color;
+  border-radius: 6px;
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  legend {
+    margin-bottom: 0.75rem;
+    color: $body-heading-color;
+    font-weight: 700;
+  }
+}
+
+.qw-quiz-label {
+  margin: 0 0 0.5rem;
+  color: $link-color;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.qw-quiz-optional {
+  color: $nav-child-link-color;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.qw-quiz-choice {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  margin: 0.4rem 0;
+
+  input {
+    flex: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+.qw-quiz-check {
+  margin-top: 0.75rem;
+}
+
+.qw-quiz-feedback {
+  &:empty {
+    display: none;
+  }
+
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  background: $body-background-color;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &.qw-quiz-correct {
+    border-left: 3px solid #22c55e;
+  }
+
+  &.qw-quiz-incorrect {
+    border-left: 3px solid #ef4444;
+  }
+}
+
+.qw-quiz-verdict {
+  margin-top: 0;
+  color: $body-heading-color;
+  font-weight: 700;
+}
+
+// "Open Qwidgets" button at the foot of the sidebar
+.qw-nav-footer {
+  padding: 1rem 2rem;
+}
