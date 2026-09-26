@@ -46,6 +46,8 @@ Every figure Qwidgets computes is a model output. Models simplify, and the secti
 - **Exit volatility.** **Current market** keeps each contract's own implied volatility, including skew. A custom value scales every contract's volatility together.
 - **Dividends** paid before the target date lower the modeled share price and are counted as cash.
 
+[Price paths for multi-expiration books]({{ '/explainers/price-paths/' | relative_url }}) explains the walk in detail.
+
 ## Stress test
 
 [Stress testing]({{ '/options/stress-testing/' | relative_url }}) reprices every position in an account at prices and volatility you set for each underlying. Its presets (up or down two standard deviations, up or down 10%, double, halve) are starting points to edit.

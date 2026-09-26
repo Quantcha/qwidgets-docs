@@ -41,4 +41,4 @@ The **Net change** table lists every difference from what you hold. Each row can
 
 When you're ready, **Trade changes** opens an order ticket with every change. **Reset to current book** discards them.
 
-How the book is valued, including path dependence across expirations, is on [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}#book-projection).
+[Price paths for multi-expiration books]({{ '/explainers/price-paths/' | relative_url }}) explains how the book is valued through expirations before the target date, and what these settings change. The model's limits are on [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}#book-projection).
