@@ -28,9 +28,9 @@ Once sharing is on:
 
 ## What people see
 
-People who open your link see your workspace as it is when they open it, with live data. They can rearrange it in their own tab and [copy it to their own account]({{ '/workspaces/copying/' | relative_url }}), but nothing they do changes yours.
+People who open your link see your workspace as it is when they open it, with live data. They can rearrange it in their own tab and [copy it to their own account]({{ '/workspaces/copying/' | relative_url }}), but nothing they do changes yours. A copy is theirs: editing it never touches your original.
 
-Your account connections are never shared. Account widgets show **Click to configure** to other people, and stock and option widgets that use your brokerage show delayed data to them.
+Your account data is never shared. Before anyone else sees the workspace, Qwidgets removes every widget's account connection, account number, and any key or token from what they get. Account widgets show **Click to configure** to other people, and stock and option widgets that use your brokerage show delayed data to them.
 
 Some news sources don't allow their articles on a shared page. If a Link List widget shows one of those sources, Qwidgets won't turn sharing on until you remove or change it.
 
