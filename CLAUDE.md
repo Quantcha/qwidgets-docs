@@ -1,6 +1,19 @@
 # Qwidgets Docs — Repository Guide
 
-This repo is the public source of `docs.qwidgets.com`: a Jekyll site on the Just the Docs theme, built by GitHub Pages from `main`. Everything here is public. Don't add internal notes, source-code paths from the app, strategy, or anything about how screenshots are produced.
+This repo is the public source of `docs.qwidgets.com`: a Jekyll site on the Just the Docs theme, built by GitHub Pages from `main`.
+
+## This repo is public
+
+Everything here can be read by anyone: the files, and also every commit message, branch name, pull request title and description, review comment, and release note. Write all of them for a reader of the docs, describing only the reader-facing change ("The Coverage Matrix now says E\*TRADE reconnects every 30 days").
+
+Never mention, in files or anywhere in the repo's history:
+- The app's source repository, its branches, pull requests, issues, or file paths.
+- How screenshots are produced: capture tooling, test accounts or scenarios, sample data, or which environment they came from.
+- Internal services and infrastructure behind the app.
+- Messaging, positioning, or strategy reasoning, launch timing, or anything not yet released.
+- Who decided or approved something, or internal review steps.
+
+Before creating a commit, branch, or pull request here, reread its text against that list. Docs bugs and requests are tracked privately, not in this repo.
 
 ## Pages
 
