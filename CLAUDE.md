@@ -25,6 +25,31 @@ sitemap: false                  # until the page has content: keeps it out of th
 - Optional quizzes: `{% include quiz.html id="<quiz-id>" %}` with data in `_data/quizzes/<quiz-id>.yml` (`question`, and `choices` each with `text`, `correct`, `explanation`). Every choice explains itself, right or wrong.
 - Callouts: `{: .note }`, `{: .tip }`, `{: .important }`, `{: .warning }` on the line before a paragraph.
 
+## Tutorials
+
+A tutorial walks one reader through one task, start to finish, with a screenshot at each step. The reference example is [Stress test a multi-expiration book](tutorials/stress-test-multi-expiration-book.md). New tutorials follow its shape.
+
+**Choosing a topic**
+- One task a real reader does, ending at a result they can act on: a number they read, a decision they can make, an order they could place. "Roll a short call that's being tested" is a tutorial; "a tour of the option chain" is a landing page.
+- It uses what ships today, across one or two pages or widgets. A task that needs five features probably wants two tutorials.
+- It teaches one idea worth checking with a question. If there's nothing to ask about, it's probably a how-to paragraph on a landing page instead.
+- Say what it needs: guest, signed in, or a connected brokerage or Kalshi account. Prefer topics a guest can follow, and don't imply a connection is needed when it isn't.
+
+**The page**
+1. **Front matter:** `parent: Tutorials`, `permalink: /tutorials/<task-in-kebab-case>/`, `section: tutorials`, the next `nav_order`, and a `description` that states the task and its result in one sentence.
+2. **Title:** the task as an imperative, sentence case ("Stress test a multi-expiration book").
+3. **Opening, two short paragraphs:** why the task matters and what you'll do; then what you need, linked to where to get it, and what the screenshots follow ("The screenshots follow an SPY call calendar…").
+4. **Numbered steps,** each an `## N. Imperative heading`. Name every control with its exact label in bold, and say where it is. One screenshot per step, after the text it illustrates, showing the result of the step.
+5. **What to look for,** in prose after a screenshot: which figure or marker to read and why it matters. Never quote a figure from a screenshot.
+6. **One quiz** near the end, on the idea the tutorial teaches, not on where a button is. Four choices, one right, each with an explanation that teaches something whether it's picked or not. The quiz ID names the idea (`stress-test-short-leg-price`).
+7. **What's next:** two to four links, to the landing pages the tutorial used, the explainer behind it, and Disclosures & Model Limits when it models outcomes.
+
+**Consistency**
+- Every screenshot in a tutorial comes from one session, so the same positions and prices carry through every step. Figures in one step must agree with the next.
+- Steps follow the fastest real route through the app. Mention an alternative route only if it's how most readers will arrive.
+- Add the tutorial to the list on the Tutorials index (`tutorials/index.md`) with a one-line description.
+- Link to the tutorial from the landing pages it teaches, where it helps a reader who's already there.
+
 ## Content rules
 
 **Mission**
