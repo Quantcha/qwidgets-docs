@@ -34,3 +34,5 @@ The stress tester reprices every position in a brokerage account at prices and v
 What the stress tester assumes, including how interim expirations settle and how requirements are estimated, is on [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}#stress-test).
 
 How interim expirations are reached on the way to the prices you set is in [Price paths for multi-expiration books]({{ '/explainers/price-paths/' | relative_url }}#the-stress-testers-paths).
+
+For a walkthrough, see [Stress test a multi-expiration book]({{ '/tutorials/stress-test-multi-expiration-book/' | relative_url }}).
