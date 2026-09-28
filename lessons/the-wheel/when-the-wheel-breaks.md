@@ -26,7 +26,7 @@ And the same 100 shares on their own, over the same range:
 
 Compare **Lowest** and **Highest** in the two. The difference between them is the premium, and against a fall this size it's small. In a sharp fall, the Wheel loses nearly as much as simply owning the stock. In a sharp rise, it gains much less. That's the trade: steadier results in calm markets, in exchange for giving up the big rallies and keeping nearly all of the big falls.
 
-Now read **Probability**, the model's chance of a fall this large. It's low, and it's too low. The model assumes a lognormal distribution with one volatility, and real markets fall this far more often than that assumes. [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}#probabilities) says so directly. Rare isn't the same as won't happen, and over years of running a Wheel, it's likely to happen at least once.
+Now read **Probability**, the model's chance of a fall this large. It's tiny, often small enough to show as 0%, and it's too low. The model assumes a lognormal distribution with one volatility, and real markets fall this far more often than that assumes. [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}#probabilities) says so directly. Rare isn't the same as won't happen, and over years of running a Wheel, it's likely to happen at least once.
 
 {: .tip }
 [Open the live version]({{ site.app_url }}/shared/workspace/wheel-when-it-breaks): both positions on today's delayed prices. Drag the forecast range to other outcomes and compare them.
