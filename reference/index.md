@@ -1,7 +1,7 @@
 ---
 title: Reference
 permalink: /reference/
-nav_order: 12
+nav_order: 13
 has_children: true
 section: reference
 description: What Qwidgets connects to, the terms it uses, and what its models assume.

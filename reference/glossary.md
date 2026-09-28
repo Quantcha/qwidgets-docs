@@ -36,6 +36,9 @@ Workspace
 
 ## Options and equities
 
+Assignment
+: When the holder of an option you sold exercises it. On a short put, you buy 100 shares per contract at the strike; on a short call, you sell them. Usually happens at expiration to contracts that finish in the money, and can happen earlier.
+
 At expiration
 : How the book handles a contract that expires before the target date: **Cash-settle**, **Always exercise**, or **Exercise if covered**.
 
@@ -44,6 +47,15 @@ Book
 
 Campaign
 : One span of a position in an underlying, from flat to flat. Campaigns are what the Campaign Journal and Performance report on.
+
+Cash-secured put
+: A short put with enough cash set aside to buy the shares at the strike if it's assigned. The Trade Screener calls it a **Secured Put**.
+
+Covered call
+: A short call on shares you own, 100 per contract. If it's assigned, you deliver the shares you hold.
+
+Days to expiration
+: The calendar days left until an option expires, often written DTE.
 
 Exit rate
 : The interest rate the book assumes at the target date.
@@ -72,6 +84,9 @@ Moneyness
 Pending book
 : The book with changes you're considering: quantities, expirations, strikes, or rights edited in place. Changes are kept while you're in the app.
 
+Premium
+: The price of an option. A seller collects it up front and keeps it whatever happens next.
+
 Price path
 : How the book moves the underlying from today to the target date: **Price sweep** or **Monte Carlo**.
 
@@ -83,6 +98,12 @@ Stress test
 
 Target date
 : The date the book or stress test values positions at.
+
+Volatility risk premium
+: The tendency, over long periods, for implied volatility to be higher than the volatility that follows. It's why option sellers have tended to be paid over time, and it's not guaranteed.
+
+Wheel
+: A strategy that sells cash-secured puts, sells covered calls on the shares if a put is assigned, and starts again with puts once the shares are called away. See [The Wheel]({{ '/lessons/the-wheel/' | relative_url }}).
 
 ## Prediction markets
 

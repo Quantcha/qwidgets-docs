@@ -1,0 +1,14 @@
+question: "You sell an event contract trading at 10 cents on an outcome you think is unlikely. When does that make money on average?"
+choices:
+  - text: "When the true probability of the outcome is below 10%."
+    correct: true
+    explanation: "The price is an implied probability. Selling at 10 cents pays on average only if the outcome is less likely than that, which is a judgment about the event."
+  - text: "Always, as long as you hold it until it settles, because its time value decays."
+    correct: false
+    explanation: "An event contract has no time value to decay. Where its price falls as time passes, that's the probability falling, and the market already prices it."
+  - text: "When implied volatility is too high, the same as selling a put."
+    correct: false
+    explanation: "That's the question for options. An event contract's price is a probability, with no volatility in it to be too high."
+  - text: "Whenever most contracts like it settle at zero."
+    correct: false
+    explanation: "Most 10-cent contracts should settle at zero; about one in ten should pay out. Settling at zero most of the time is exactly what the price already implies."

@@ -1,0 +1,14 @@
+question: "You widen the forecast range until Probability is close to 100%. What does Win in range now tell you?"
+choices:
+  - text: "Roughly the chance the trade is profitable at all."
+    correct: true
+    explanation: "Win in range is the chance of profit given the price lands in the range. When the range covers nearly every outcome, that condition is almost always met."
+  - text: "The chance the put is assigned."
+    correct: false
+    explanation: "Assignment happens when the put finishes in the money, below the strike. The trade can still be profitable there, down to the breakeven, so the two chances differ."
+  - text: "Nothing useful. A range that wide ignores your forecast."
+    correct: false
+    explanation: "It sets your forecast aside, which is the point: it reads the model's view of the whole distribution. Narrow the range again to ask about a particular outcome."
+  - text: "The chance the price stays inside the range."
+    correct: false
+    explanation: "That's Probability, which you've just set near 100%. Win in range is about profit inside the range, not about landing in it."

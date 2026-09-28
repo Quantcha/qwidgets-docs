@@ -31,3 +31,5 @@ Switch between **Cards** and **Table**. Each result shows the underlying and its
 - **Save screen** keeps your setup when you're signed in.
 
 Results are as of the last screen, and prices move. The results note how many rows have moved since.
+
+For a walkthrough, see [Screen for cash-secured puts]({{ '/tutorials/screen-for-secured-puts/' | relative_url }}).

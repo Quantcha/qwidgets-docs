@@ -63,6 +63,27 @@ A tutorial walks one reader through one task, start to finish, with a screenshot
 - Add the tutorial to the list on the Tutorials index (`tutorials/index.md`) with a one-line description.
 - Link to the tutorial from the landing pages it teaches, where it helps a reader who's already there.
 
+## Lessons
+
+A lesson makes the case for one trading idea, with Qwidgets as the evidence: the positions, the payoff charts, and what they show. The reader reads it rather than follows it. A tutorial teaches a task; an explainer teaches how Qwidgets models something; a lesson teaches an idea about trading.
+
+**Paths**
+- Lessons are grouped into paths. A path is a hub page under Lessons (`/lessons/<path>/`, `has_children: true`) that lists every piece in reading order—its lessons, and the tutorials and explainers that belong with them—each labeled with its type. The lessons are the hub's children; tutorials and explainers stay in their own sections, and the hub links to them.
+- Each piece makes sense on its own. Only the hub knows the order.
+
+**The page**
+1. **Front matter:** `parent: <path title>`, `grand_parent: Lessons`, `permalink: /lessons/<path>/<idea-in-kebab-case>/`, `section: lessons`, the next `nav_order`, and a `description` that states the idea in one sentence.
+2. **Title:** the idea, sentence case. A claim or a question is fine ("When the Wheel breaks").
+3. **Access line** as the first paragraph: "**Works as a guest.**", or what's needed and a link to get it.
+4. **The argument,** in `##` sections, with screenshots as evidence. The prose tells the reader what to look for in each screenshot and never quotes a figure from one. Round-number examples written into the prose are fine when they're plainly illustrations.
+5. **A live workspace,** where one exists: a `{: .tip }` callout linking to `{{ site.app_url }}/shared/workspace/<slug>` that says what it shows and suggests one thing to try. Never describe what the workspace currently holds (which contract, which price); its contents change.
+6. **One quiz,** on the idea.
+7. **What's next:** the next piece in the path, and the pages and explainers the lesson leans on.
+
+**Balance**
+- A lesson that shows a strategy's appeal shows its downside at least as clearly, and links to Disclosures & Model Limits.
+- Keep basic definitions in the glossary rather than rebuilding an options course in every lesson.
+
 ## Content rules
 
 **Mission**
