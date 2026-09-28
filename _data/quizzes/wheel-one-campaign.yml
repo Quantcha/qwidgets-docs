@@ -1,0 +1,14 @@
+question: "Why does the Campaign Journal show a whole Wheel, from the first put to the shares being called away, as one campaign?"
+choices:
+  - text: "A campaign runs from flat to flat, and the position in the underlying never went flat until the shares were called away."
+    correct: true
+    explanation: "The put becomes shares at assignment and the shares carry the calls, so the position is continuous. Seeing it as one campaign shows what the Wheel made as a whole."
+  - text: "Because you tagged it as a Wheel."
+    correct: false
+    explanation: "Tags help you find and group campaigns. They don't decide where a campaign starts and ends; the position does."
+  - text: "Because every trade in the same underlying is always one campaign."
+    correct: false
+    explanation: "Once the position is flat, the next trade starts a new campaign. The next Wheel on the same fund is a separate one."
+  - text: "Because assignment is treated as closing the put and opening an unrelated stock position."
+    correct: false
+    explanation: "Assignment shows as an action in the middle of the campaign. That continuity is what lets you see the put, shares, and calls together."

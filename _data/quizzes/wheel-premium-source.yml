@@ -1,0 +1,14 @@
+question: "Over long periods, option sellers on broad stock indexes have tended to come out ahead. What are they being paid for?"
+choices:
+  - text: "Carrying the risk of sharp moves that option buyers want protection from."
+    correct: true
+    explanation: "Buyers pay more than the expected cost of protection, the way people pay for insurance. Sellers collect that extra, and give it back in large amounts when sharp moves happen."
+  - text: "Time passing. Every option loses value each day, so selling one is a reliable source of income."
+    correct: false
+    explanation: "Options do lose time value, but a fairly priced option's decay is matched by the risk of a move. What sellers have been paid over time is implied volatility running higher than what followed, not time itself."
+  - text: "Nothing. Option prices are always exactly fair, so sellers break even on average."
+    correct: false
+    explanation: "If implied volatility were exactly right on average, that would be true, less the spread. Over long periods it has more often than not been higher than the volatility that followed."
+  - text: "Knowing where the stock is going. Sellers profit because they forecast direction better."
+    correct: false
+    explanation: "The premium is paid for carrying the risk of a large move against you. Collecting it doesn't require a view on where the stock is going."

@@ -1,0 +1,14 @@
+question: "You were assigned at $50, and the shares have fallen to $35. You sell a covered call at $36 to collect more premium. What's the risk?"
+choices:
+  - text: "If the shares recover above $36, they're called away there, and most of the $14 loss is locked in."
+    correct: true
+    explanation: "The call caps what you receive at the strike. A recovery past it ends the position at a loss, reduced only by the premiums you collected."
+  - text: "None. A covered call can't lose money because you own the shares."
+    correct: false
+    explanation: "Covered means the call can't force you to buy shares you don't have. It doesn't protect the shares from falling further, and it caps any recovery at the strike."
+  - text: "The call could be assigned below $35, forcing you to sell for less than the market price."
+    correct: false
+    explanation: "If assigned, you sell at the strike, $36, not below it. The risk is that the shares rise past the strike, not that you sell below it."
+  - text: "You lose the premium if the shares keep falling."
+    correct: false
+    explanation: "If the shares keep falling, the call expires and you keep the premium. The shares' fall is the loss, and the premium softens it slightly."

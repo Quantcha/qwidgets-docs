@@ -21,6 +21,8 @@ Every campaign in a brokerage account has a timeline: how it opened, what you di
 - **Held now**, for an open campaign.
 - **Leg performance during the campaign:** how each leg, such as the shares and the short call, did on its own.
 
+For a walkthrough, see [Follow a Wheel in the Campaign Journal]({{ '/tutorials/follow-a-wheel-campaign/' | relative_url }}).
+
 ## Your notes
 
 **Annotate** adds your own record to a campaign:

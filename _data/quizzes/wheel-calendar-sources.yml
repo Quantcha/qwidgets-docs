@@ -1,0 +1,14 @@
+question: "A rate decision is due before your put expires. What do event contracts on the decision tell you that the option chain doesn't?"
+choices:
+  - text: "The implied probability of each outcome of the decision."
+    correct: true
+    explanation: "Each event contract's price is an implied probability for one outcome. Option prices show how large a move the market expects, not which outcome it expects."
+  - text: "How large a move the underlying will make on the day."
+    correct: false
+    explanation: "That's what the option chain describes, through implied volatility. Event contracts price the outcome of the announcement, not the size of the move in your underlying."
+  - text: "Whether your put will be assigned."
+    correct: false
+    explanation: "Assignment depends on where the underlying finishes at expiration. The event contracts describe one announcement that may move it, not where it ends up."
+  - text: "A way to cancel out the put's risk from the announcement."
+    correct: false
+    explanation: "This lesson uses event contracts as information about the announcement, not as a hedge. Whether to take a position in them is a separate decision."

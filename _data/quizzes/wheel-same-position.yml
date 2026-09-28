@@ -1,0 +1,14 @@
+question: "Your cash-secured put is assigned, and you sell a covered call at the same strike and expiration. How has your exposure to a fall in the shares changed?"
+choices:
+  - text: "It's gone. You own the shares now, so the put's risk is over."
+    correct: false
+    explanation: "The put's obligation is over, but you hold its result. Shares that keep falling lose you money just as the put did below its strike."
+  - text: "It's nearly the same. Both positions lose as the shares fall below the strike, with only the premium as a cushion."
+    correct: true
+    explanation: "A short put and shares with a covered call at the same strike have nearly the same payoff. Assignment changes what you hold, not what you're exposed to."
+  - text: "It's about doubled, because you're holding shares and a short call."
+    correct: false
+    explanation: "The short call is covered by the shares, so it adds no downside of its own. It caps your gain above the strike and adds its premium as a cushion."
+  - text: "It's replaced by exposure to the shares rising."
+    correct: false
+    explanation: "The covered call caps your gain above the strike. You keep the exposure to a fall, not to a rise."

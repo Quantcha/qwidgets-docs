@@ -1,0 +1,14 @@
+question: "You move a cash-secured put's strike closer to the current price, in the same expiration. What happens?"
+choices:
+  - text: "The premium rises, and so does the chance you're assigned."
+    correct: true
+    explanation: "A strike nearer the price is more likely to finish in the money, and the market charges for that. You're paid more because you're more likely to end up owning the shares."
+  - text: "The premium rises, and the chance of assignment falls."
+    correct: false
+    explanation: "They move together. A put nearer the price is more likely to finish in the money, which is why it pays more."
+  - text: "The premium falls, because the put is closer to being worthless."
+    correct: false
+    explanation: "It's the other way around. A put further below the price is the one closer to expiring worthless, and it pays less."
+  - text: "The trade gets better, because you collect more premium."
+    correct: false
+    explanation: "The larger premium comes with a larger chance of being assigned on shares that have fallen. More premium alone doesn't make a trade better; it pays for more risk."
