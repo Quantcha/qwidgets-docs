@@ -19,7 +19,7 @@ All three are worked out for the **forecast range**: the band of prices you set 
 - **Win in range** is the chance the trade is profitable, *given* the underlying finishes inside the range. It isn't the chance of profit overall.
 - **Expected Value** is the trade's average profit or loss if the underlying finishes inside the range, weighting each price by how likely it is. It describes the range, not every outcome: it isn't scaled down by **Probability**.
 
-**To read the chance of profit overall,** widen the range until **Probability** is close to 100%. Then **Win in range** is, in effect, the chance the trade makes money at all. The live workspaces in the [Wheel lessons]({{ '/lessons/the-wheel/' | relative_url }}) set the range to three standard deviations either side of the current price for exactly this reason.
+**To read the chance of profit overall,** widen the range until **Probability** is close to 100%. Then **Win in range** is, in effect, the chance the trade makes money at all. The live workspaces in [Covered calls and the Wheel]({{ '/lessons/covered-calls-and-the-wheel/' | relative_url }}) set the range to three standard deviations either side of the current price for exactly this reason.
 
 **To ask a what-if question,** narrow it. A range over a sharp fall shows how bad that fall would be (**Lowest** and **Highest**) and how likely the model thinks it is (**Probability**).
 
@@ -41,7 +41,7 @@ The chances come from a distribution of the underlying's price at the target dat
 
 ## Delta as a shortcut
 
-Traders often read an option's **delta** as the chance it finishes in the money: a put with a delta of −0.30 is "about 30%." It's a useful rough guide, and the [Wheel lessons]({{ '/lessons/the-wheel/choosing-strikes-and-expirations/' | relative_url }}) use it that way to compare strikes. But it isn't the same number.
+Traders often read an option's **delta** as the chance it finishes in the money: a call with a delta of 0.30 is "about 30%." It's a useful rough guide, and [Choosing strikes and expirations]({{ '/lessons/covered-calls-and-the-wheel/choosing-strikes-and-expirations/' | relative_url }}) uses it that way to compare strikes. But it isn't the same number.
 
 - Delta measures how much the option's price moves for a small move in the underlying. The delta on the chain comes from the market-data provider, with the contract's implied volatility.
 - The chance of finishing in the money depends on the same inputs but isn't the same formula. At the same volatility, a put's delta is a little smaller than its chance of finishing in the money, and a call's a little larger. The gap grows with volatility and time to expiration.

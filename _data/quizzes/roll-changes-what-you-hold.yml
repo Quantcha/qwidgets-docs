@@ -1,0 +1,14 @@
+question: "Your cash-secured put is being tested. Compared with taking assignment and selling a call at the same strike next month, how different is rolling the put out a month?"
+choices:
+  - text: "Nearly the same exposure. The main differences are costs, cash versus shares, dividends, and taxes."
+    correct: true
+    explanation: "A short put and shares with a covered call at the same strike have nearly the same payoff, so the two choices leave you exposed to the stock in nearly the same way."
+  - text: "Very different: rolling avoids the loss, and assignment locks it in."
+    correct: false
+    explanation: "Rolling doesn't remove the loss; the new put still loses if the shares stay below the strike. Assignment doesn't lock anything in either, since you still hold the shares."
+  - text: "Rolling is always better, because it collects a credit."
+    correct: false
+    explanation: "A credit adds a little premium, but the exposure is the same. Whether it's better depends on costs and what you'd rather hold, not on the credit alone."
+  - text: "Assignment is always better, because the Wheel requires it."
+    correct: false
+    explanation: "Assignment is the Wheel's rule, but the exposure is nearly the same either way. The choice is about costs, cash versus shares, and which strategy you mean to run."

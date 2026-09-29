@@ -1,0 +1,14 @@
+question: "You move a covered call's strike closer to the current price, in the same expiration. What happens?"
+choices:
+  - text: "The call pays more, and your shares are more likely to be called away."
+    correct: true
+    explanation: "A strike nearer the price is more likely to finish in the money, and the market charges for that. You're paid more because you give up more of the upside, sooner."
+  - text: "The call pays more, and your shares are less likely to be called away."
+    correct: false
+    explanation: "They move together. A call nearer the price is more likely to finish in the money, which is why it pays more."
+  - text: "The call pays less, because it's closer to being worthless."
+    correct: false
+    explanation: "It's the other way around. A call further above the price is the one closer to expiring worthless, and it pays less."
+  - text: "Nothing changes except the premium."
+    correct: false
+    explanation: "The strike is also where your gain stops. A closer strike caps the shares sooner."

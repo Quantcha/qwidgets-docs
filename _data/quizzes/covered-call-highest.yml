@@ -1,0 +1,14 @@
+question: "In Trade analysis, why doesn't a covered call's Highest outcome grow when you widen the forecast range upward?"
+choices:
+  - text: "Above the strike, the shares are called away at the strike, so further rises add nothing."
+    correct: true
+    explanation: "The short call caps the position at the strike. The most you make is the gain up to the strike, plus the premium."
+  - text: "The model assumes the shares can't rise that far."
+    correct: false
+    explanation: "The model allows large rises. The payoff is flat above the strike because of the call, not because the model rules the rise out."
+  - text: "Because the forecast range only covers falls."
+    correct: false
+    explanation: "The range covers whatever prices you drag it across. Widening it upward includes higher prices; the covered call just doesn't earn more there."
+  - text: "The premium shrinks as the shares rise."
+    correct: false
+    explanation: "You collected the premium when you sold the call; it's fixed. The cap comes from delivering the shares at the strike."

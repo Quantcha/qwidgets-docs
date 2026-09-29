@@ -1,0 +1,14 @@
+question: "A trader sells puts and always rolls them to avoid being assigned. Is that the Wheel?"
+choices:
+  - text: "No. The Wheel takes assignment and moves to covered calls; avoiding assignment means there's never a call phase."
+    correct: true
+    explanation: "The Wheel is defined by accepting assignment. Rolling to avoid it is a different strategy, selling puts, with its own risk: repeated rolls can defer a loss while the position grows."
+  - text: "Yes. Any strategy that sells puts for premium is the Wheel."
+    correct: false
+    explanation: "Selling puts is where the Wheel starts, not what defines it. What makes it a Wheel is taking the shares and selling calls on them."
+  - text: "Yes, as long as each roll is for a credit."
+    correct: false
+    explanation: "A credit on the roll doesn't change the strategy. Without assignment, there's no call phase, and no Wheel."
+  - text: "No, because the Wheel never uses puts."
+    correct: false
+    explanation: "The Wheel starts with cash-secured puts. It's avoiding their assignment that makes this a different strategy."

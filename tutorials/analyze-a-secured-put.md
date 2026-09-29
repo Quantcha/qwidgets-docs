@@ -2,14 +2,14 @@
 title: Analyze a cash-secured put
 parent: Tutorials
 permalink: /tutorials/analyze-a-secured-put/
-nav_order: 2
+nav_order: 4
 section: tutorials
 description: "Build a cash-secured put in Trade analysis, widen the forecast to read its chance of profit, and see what a closer strike changes."
 ---
 
 # Analyze a cash-secured put
 
-A cash-secured put is the first phase of the Wheel, and the trade most Wheel decisions come down to: which strike, which expiration, and whether the premium is worth the risk. In this tutorial you'll build one in Trade analysis, set the forecast wide enough to read its chance of profit, and see what moving the strike changes.
+A cash-secured put is the first phase of the Wheel, and nearly the same position as a covered call ([Cash-secured puts: the same position from the other side]({{ '/lessons/covered-calls-and-the-wheel/cash-secured-puts/' | relative_url }}) explains why). It's the trade most Wheel decisions come down to: which strike, which expiration, and whether the premium is worth the risk. In this tutorial you'll build one in Trade analysis, set the forecast wide enough to read its chance of profit, and see what moving the strike changes.
 
 You don't need an account; everything here works as a guest, on delayed data. The screenshots follow a put on XLF, the Financial Select Sector SPDR Fund, about five weeks from expiration. It's an illustration, not a recommendation.
 
@@ -59,13 +59,13 @@ Pick the next **Strike** up, closer to the current price.
 
 {% include shot.html id="secured-put-closer-strike" alt="The same put one strike closer to the current price: a larger credit, a higher breakeven, and a lower Win in range." %}
 
-The credit rises, the breakeven rises with it, and **Win in range** falls. You're paid more because you're more likely to be assigned. [Choosing strikes and expirations]({{ '/lessons/the-wheel/choosing-strikes-and-expirations/' | relative_url }}) looks at that trade-off in more depth.
+The credit rises, the breakeven rises with it, and **Win in range** falls. You're paid more because you're more likely to be assigned. [Choosing strikes and expirations]({{ '/lessons/covered-calls-and-the-wheel/choosing-strikes-and-expirations/' | relative_url }}) looks at that trade-off in more depth.
 
 {% include quiz.html id="secured-put-win-in-range" %}
 
 ## What's next
 
-- [The Wheel]({{ '/lessons/the-wheel/' | relative_url }}): the learning path this tutorial belongs to.
+- [Covered calls and the Wheel]({{ '/lessons/covered-calls-and-the-wheel/' | relative_url }}): the learning path this tutorial belongs to.
 - [Trade analysis]({{ '/options/trade-analysis/' | relative_url }}): every setting on the page.
 - [How Qwidgets estimates the chance of profit]({{ '/explainers/chance-of-profit/' | relative_url }}): the model behind **Win in range**.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): these are models, not forecasts, and not investment advice.

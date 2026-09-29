@@ -28,6 +28,8 @@ A free Qwidgets account adds what Qwidgets keeps for you:
 
 **Register** in the top bar creates an account; **Login** signs you in. You can sign in with your email or user name and password, with a link sent to your email, or with an external account.
 
+[Why sign in?]({{ '/accounts/why-sign-in/' | relative_url }}) says more about what an account keeps for you.
+
 ## Connected accounts
 
 Each connection adds what its kind of account provides:
@@ -36,5 +38,7 @@ Each connection adds what its kind of account provides:
 - **Kalshi** adds your event contract portfolio, orders, settlements, and trading. See [Kalshi account]({{ '/accounts/kalshi/' | relative_url }}).
 
 Book management, stress testing, and performance tracking all work from your positions, so they need a connected brokerage.
+
+[Why connect a brokerage?]({{ '/accounts/why-connect/' | relative_url }}) covers what a connection adds, how it works, and what stays private.
 
 Connections are yours alone. They're never shared, not even in a workspace you share by link. See [Sharing by link]({{ '/workspaces/sharing/' | relative_url }}#what-people-see).

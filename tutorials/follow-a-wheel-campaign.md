@@ -2,7 +2,7 @@
 title: Follow a Wheel in the Campaign Journal
 parent: Tutorials
 permalink: /tutorials/follow-a-wheel-campaign/
-nav_order: 4
+nav_order: 5
 section: tutorials
 description: "See a Wheel's put, assignment, and covered call as one campaign, read how each leg did, and review all your Wheels together."
 ---
@@ -11,7 +11,9 @@ description: "See a Wheel's put, assignment, and covered call as one campaign, r
 
 A Wheel isn't one trade. It's a put, maybe an assignment, shares, a call or several, and finally the shares called away. Judged trade by trade, it can look like a string of small wins and one large loss, or the other way around. The Campaign Journal puts the whole thing on one timeline, so you can see what the Wheel actually made. In this tutorial you'll find a Wheel in your account's campaigns, read its timeline and how each leg did, and filter to all your Wheels at once.
 
-You'll need a connected brokerage account with a Wheel in its history; see [Connect a brokerage]({{ '/getting-started/' | relative_url }}#connect-a-brokerage-or-kalshi-account). The screenshots follow a Wheel on one fund: a cash-secured put that was assigned, then a covered call that was called away.
+{% include needs.html tier="brokerage" scope="tutorial" %}
+
+You'll follow a Wheel from your own account's history. To set up the connection, see [Connect a brokerage]({{ '/getting-started/' | relative_url }}#connect-a-brokerage-or-kalshi-account). The screenshots follow a Wheel on one fund: a cash-secured put that was assigned, then a covered call that was called away.
 
 ## 1. Open Performance
 
@@ -63,4 +65,4 @@ To see every Wheel together, set the **Patterns** filter above the list to **Whe
 
 - [Campaign Journal]({{ '/accounts/brokerage/campaign-journal/' | relative_url }}): everything on the timeline, and correcting a cost basis or merging campaigns.
 - [Performance]({{ '/accounts/brokerage/performance/' | relative_url }}): win rate, expectancy, and the equity curve.
-- [When the Wheel breaks]({{ '/lessons/the-wheel/when-the-wheel-breaks/' | relative_url }}): what a campaign that went badly usually looks like, and why.
+- [When the stock falls]({{ '/lessons/covered-calls-and-the-wheel/when-the-stock-falls/' | relative_url }}): what a campaign that went badly usually looks like, and why.

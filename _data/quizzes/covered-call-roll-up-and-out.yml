@@ -1,0 +1,14 @@
+question: "Your shares have risen well past your covered call's strike, and you want to keep them. You roll the call up and out. What usually happens?"
+choices:
+  - text: "You pay to roll, because the call you buy back is in the money and costs more than the new one pays."
+    correct: true
+    explanation: "An in-the-money call is expensive to close, and a call further out at a higher strike pays less. The difference is the cost of keeping the shares and moving the cap up."
+  - text: "You collect a large credit, because the new call has more time."
+    correct: false
+    explanation: "More time adds value to the new call, but the higher strike takes it away, and the call you buy back is worth at least its intrinsic value. A deep in-the-money roll usually costs something."
+  - text: "Nothing changes except the expiration."
+    correct: false
+    explanation: "Rolling up also raises the strike, which moves the cap on your gain. That's the point of rolling up rather than only out."
+  - text: "The shares are sold and bought back at today's price."
+    correct: false
+    explanation: "A roll only replaces the call. The shares stay in your account, which is why people roll when they want to keep them."
