@@ -44,7 +44,7 @@ Same outcome at every price. That isn't a coincidence of the numbers. Owning the
 In the workspace for this lesson, the strike is below the current price. The call is in the money there, so its premium is larger: it includes the amount the shares are already above the strike. That extra is paid back when the shares are called away at the strike, and the two charts still line up. In a real Wheel, the call comes after assignment, when the price has fallen to the strike or below, so it's usually sold at or out of the money. [When the Wheel breaks]({{ '/lessons/the-wheel/when-the-wheel-breaks/' | relative_url }}) shows that version.
 
 {: .tip }
-[Open the live version]({{ site.app_url }}/shared/workspace/wheel-strategy): both trades on today's delayed prices, one above the other. Change the expiration on either one and watch them move together.
+[Open the live version]({{ site.app_url }}/shared/workspace/wheel-strategy): both trades on today's delayed prices, one above the other. Change the expiration on either one, then move its date to match, and compare them again.
 
 ## What this means for the Wheel
 
