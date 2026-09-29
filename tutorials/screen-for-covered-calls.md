@@ -59,7 +59,7 @@ From here, [Analyze a covered call]({{ '/tutorials/analyze-a-covered-call/' | re
 
 ## 6. Run the same screen for cash-secured puts
 
-Go back to the screener and set **Strategy** to **Secured Put**. The filters stay as they are and apply the same way: **Delta, absolute** works for puts too, because it ignores the sign.
+Use your browser's back button to return to the screen, and set **Strategy** to **Secured Put**. The filters stay as they are and apply the same way: **Delta, absolute** works for puts too, because it ignores the sign.
 
 {% include shot.html id="screen-calls-secured-put" alt="The same screen with Strategy set to Secured Put: the four filters unchanged, and cash-secured put results as cards." %}
 
