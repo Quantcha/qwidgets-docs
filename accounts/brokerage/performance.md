@@ -10,6 +10,8 @@ description: Realized P&L, win rate, expectancy, and every campaign, from your b
 
 # Performance
 
+{% include needs.html tier="brokerage" scope="page" %}
+
 The **Performance** tab works out how your trading has gone from the account's whole transaction history, campaign by campaign.
 
 {% include shot.html id="account-performance" alt="The Performance tab: filters, tiles for realized P&L, unrealized, win rate, expectancy, profit factor, and campaigns, a cumulative realized P&L chart, a monthly heatmap, realized P&L by strategy, and the list of campaigns." %}

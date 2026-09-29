@@ -9,6 +9,8 @@ description: What one underlying's positions are worth now and at a target date,
 
 # Book management
 
+{% include needs.html tier="brokerage" scope="page" %}
+
 A book is everything one brokerage account holds in one underlying: shares and options, across expirations. The book page values it now and at a target date, and lets you try changes before you trade them. It needs a connected brokerage.
 
 {% include shot.html id="book-management" alt="The book page for SPY in a brokerage account: the assumptions bar, the Held now and Pending book cards, and the chart of what the pending book is worth across outcomes." %}

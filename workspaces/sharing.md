@@ -9,6 +9,8 @@ description: Publishing a workspace by link, and listing it in the public catalo
 
 # Sharing by link
 
+{% include needs.html tier="account" scope="page" %}
+
 A shared workspace has a public link. Anyone with it can open the workspace in a browser, with live data and no account needed. Sharing is off until you turn it on.
 
 {% include shot.html id="workspace-sharing" alt="A workspace's manage page, with the Sharing panel showing its Share URL, Regenerate Link and Disable Sharing buttons, and List in Public Catalog checked with an Approved status." %}

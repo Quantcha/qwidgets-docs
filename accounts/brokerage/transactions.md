@@ -10,6 +10,8 @@ description: Your brokerage account's transaction history, and fixing what the b
 
 # Transactions
 
+{% include needs.html tier="brokerage" scope="page" %}
+
 The **Transactions** tab lists the account's history as the brokerage reports it, newest first: trades, assignments, exercises, expirations, dividends, interest, fees, transfers, splits, and more. [Performance]({{ '/accounts/brokerage/performance/' | relative_url }}) and the [Campaign Journal]({{ '/accounts/brokerage/campaign-journal/' | relative_url }}) are built from it.
 
 {% include shot.html id="account-transactions" alt="The Transactions tab listing trades, an assignment, and an expiration with their dates, securities, quantities, prices, amounts, and costs." %}

@@ -9,7 +9,9 @@ description: Creating, favoriting, renaming, and deleting your workspaces.
 
 # Saving
 
-Saving workspaces needs a sign-in. Without one, you have the [guest workspace]({{ '/workspaces/' | relative_url }}#kinds-of-workspaces), which lasts as long as its browser tab.
+{% include needs.html tier="account" scope="page" %}
+
+Without an account, you have the [guest workspace]({{ '/workspaces/' | relative_url }}#kinds-of-workspaces), which lasts as long as its browser tab.
 
 ## What saves automatically
 

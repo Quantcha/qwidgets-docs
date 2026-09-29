@@ -27,7 +27,9 @@ A shared workspace shows the layout its owner has when you first open it in a ta
 
 Select **Copy To My Workspaces** at the top of the workspace. It becomes a new workspace in your account, including any changes you made in the tab, and opens so you can keep working. The copy is independent: the owner's later changes don't reach it, and yours don't reach theirs.
 
-Copying needs a sign-in. If you aren't signed in, sign in or register first, then open the workspace and select **Copy To My Workspaces**.
+{% include needs.html tier="account" %}
+
+If you aren't signed in, sign in or register first, then open the workspace and select **Copy To My Workspaces**.
 
 ## What doesn't come with it
 

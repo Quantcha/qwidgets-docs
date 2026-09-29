@@ -11,7 +11,9 @@ description: Turn your own probabilities across an event's outcomes into positio
 
 The **Prediction Distribution Builder** is a widget that takes your view of an event, the probability you give each outcome, and works out the positions that express it, next to what you already hold. It works on events whose outcomes form a distribution: ladders of thresholds, sets of ranges, spreads, and numeric outcomes.
 
-It needs a connected Kalshi account. Open it from an event's context menu (**Open Portfolio Optimizer with** your account), or add it to a workspace and choose the account and event in its settings.
+{% include needs.html tier="kalshi" scope="page" %}
+
+Open it from an event's context menu (**Open Portfolio Optimizer with** your account), or add it to a workspace and choose the account and event in its settings.
 
 ## Set your view
 
