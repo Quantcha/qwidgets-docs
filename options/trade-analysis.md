@@ -42,7 +42,7 @@ These come from a model with stated assumptions; see [How Qwidgets estimates the
 
 ## Take it further
 
-- **Trade** opens an order ticket in your brokerage account with these legs.
-- **Model in book** adds the trade to an account's book as pending changes and opens [Book management]({{ '/options/book-management/' | relative_url }}).
-- **Save trade** keeps the trade in your saved trades, when you're signed in.
+- **Trade** opens an order ticket in your brokerage account with these legs. It needs a connected brokerage ([why?]({{ '/accounts/why-connect/' | relative_url }})).
+- **Model in book** adds the trade to an account's book as pending changes and opens [Book management]({{ '/options/book-management/' | relative_url }}). It needs a connected brokerage ([why?]({{ '/accounts/why-connect/' | relative_url }})).
+- **Save trade** keeps the trade in your saved trades, when you're signed in ([why?]({{ '/accounts/why-sign-in/' | relative_url }})).
 - The page's address updates as you edit, so you can bookmark or share a trade.

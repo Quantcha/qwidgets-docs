@@ -10,6 +10,8 @@ description: Each campaign's timeline, leg by leg, with your own notes and tags.
 
 # Campaign Journal
 
+{% include needs.html tier="brokerage" scope="page" %}
+
 Every campaign in a brokerage account has a timeline: how it opened, what you did along the way, and how it ended, with your own notes beside it. Open one by selecting it in the campaign list on [Performance]({{ '/accounts/brokerage/performance/' | relative_url }}), or keep recent ones on a workspace with the [Campaign Journal widget]({{ '/widgets/equity-campaign-journal/' | relative_url }}).
 
 {% include shot.html id="campaign-timeline" alt="A covered call campaign's timeline: opened by buying 100 shares and selling a call, then assigned at expiration, with a table of each leg's performance." %}

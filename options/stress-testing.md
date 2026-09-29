@@ -9,6 +9,8 @@ description: Reprice a whole brokerage account under the prices and volatility y
 
 # Stress testing
 
+{% include needs.html tier="brokerage" scope="page" %}
+
 The stress tester reprices every position in a brokerage account at prices and volatility you choose for each underlying, and shows what the account would be worth on a target date. It's on the **Stress Test** tab of a brokerage account, so it needs a connected brokerage.
 
 {% include shot.html id="stress-testing" alt="The stress tester for a brokerage account: the assumptions bar, a summary sentence of what the account would be worth, the requirement estimate, and the table of positions with target prices, target volatility, and changes." %}
