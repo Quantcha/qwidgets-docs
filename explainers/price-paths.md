@@ -40,7 +40,7 @@ At the target date, shares are worth the path's final price, and contracts still
 
 The default. It draws a family of paths across the range of outcomes, from three standard deviations below the forward price to three above. Each path keeps the same place in the distribution on every date: the path that finishes two standard deviations high was two standard deviations high at each expiration on the way.
 
-That's what makes a curve possible. Each path ends at one price, so the book's value can be drawn against where the underlying finishes, which is the chart on the book page and the Book widget. Each path is weighted by how likely its final price is, and those weights give **Chance of gain**. The path in the middle, which finishes at the forward price, gives **Value at target**.
+That's what makes a curve possible. Each path ends at one price, so the book's value can be drawn against where the underlying finishes, which is the chart on the book page and the Book widget. Each path is weighted by how likely its final price is, and those weights give **Chance of gain**. The path in the middle, which finishes at the forward price, gives **Value at target**, and the Book widget's **P&L at target** is that value less what the book cost.
 
 How far a path has traveled by each date follows the market's own volatility to that date, read from the option chains. A week that holds an earnings report carries more of the move than a quiet week of the same length, so a path is in the right place at the expiration where a near contract settles.
 
@@ -50,11 +50,17 @@ What a sweep can't show is a path that changes direction: one that rallies throu
 
 ### Monte Carlo
 
-Random paths, each stepped from one key date to the next, so a path can rise into an expiration and fall after it. That's exactly the case a sweep leaves out. All paths count equally, and **Chance of gain** is the share of them that end above the book's value now.
+Random paths, 500 of them, each stepped from one key date to the next, so a path can rise into an expiration and fall after it. That's exactly the case a sweep leaves out. All paths count equally. **Expected value** is the average of the book's value across them, and it takes the place of **Value at target**, since no single random path stands for the middle; the Book widget's **P&L at target** follows it. **Chance of gain** is the share of paths that end above the book's value now.
 
-Random paths don't line up by final price, so they don't make a curve; the chart is drawn by the price sweep. Monte Carlo paths move at one volatility, the market's to the target date, rather than following the term structure.
+Each step moves at the market's volatility for that stretch between key dates, read from the same term structure the sweep follows, so a stretch that holds an earnings report moves more than a quiet one of the same length. Choosing Monte Carlo over the sweep changes only the shape of the paths, not how far the market expects the underlying to travel.
 
 Each step starts from where the path is, not from today's price, so a path that has fallen keeps moving from its lower price. The size of the next move, measured as a percentage, doesn't depend on which way the path went before.
+
+Random paths don't line up by final price, so the chart shows them as points rather than a curve: one point per path, at the price where it finished and the change in the book's value along it. Two paths can finish at the same price with different values, when one crossed a strike at an earlier expiration and the other didn't, and a curve would hide exactly that. When the book has pending changes, the book as held and the pending book are valued along the same paths, so each point for one sits directly above or below its partner for the other, and the gap between the two clouds is what the change does.
+
+{% include shot.html id="price-paths-monte-carlo-scatter" alt="The book page's chart with Price path set to Monte Carlo, for the SPY call calendar valued one week past the short call's expiration: below the strike the points trace a single curve, and above it they spread into a wide band of gains and losses at the same final price." caption="The same SPY calendar as below, on Monte Carlo, a week past the short call's expiration." %}
+
+Below the strike the points still trace one curve: both calls finish worth little whichever way the stock went, so the route doesn't matter. Above it they spread out. A path that ran up through the short call's expiration paid its intrinsic value there, and if the stock then fell back, the long call didn't earn it back: those are the losses. A path that was below the strike then let the short call expire worthless and kept all of the long call's later gain. Same final price, different outcome.
 
 {% include shot.html id="price-paths-monte-carlo" ext="svg" alt="Thirty Monte Carlo paths for the same stock, each stepping from today to the short call's expiration and then to the target. Five highlighted paths were clearly on one side of the strike when the short call expired and finish on the other." caption="The highlighted paths are the case a sweep can't draw: the short call settles on one side of the strike, and the stock finishes on the other." %}
 
@@ -73,7 +79,7 @@ Raising exit volatility makes the options you still hold worth more at the targe
 
 ## Reading the chart
 
-This SPY calendar spread is short a call in the front month and long the same strike a month later. Valued at the front month's expiration, the short call settles at the target itself, and the curve is the familiar tent around the strike:
+This SPY calendar spread is short a call in the front month and long the same strike a month later, shown with the price sweep. Valued at the front month's expiration, the short call settles at the target itself, and the curve is the familiar tent around the strike:
 
 {% include shot.html id="price-paths-at-front-expiration" alt="The Book widget for an SPY call calendar valued at the short call's expiration: the change in value peaks near the strike and falls away on either side." %}
 
