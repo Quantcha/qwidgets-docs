@@ -2,3 +2,11 @@
   Qwidgets is free to use. Nothing here is investment advice; see
   <a href="{{ '/reference/disclosures/' | relative_url }}">Disclosures &amp; Model Limits</a>.
 </p>
+
+<script>
+  // Links into the app open in a new tab, so the docs stay open beside it.
+  document.querySelectorAll('a[href^="{{ site.app_url }}"]').forEach(function (link) {
+    link.target = "_blank";
+    link.rel = "noopener";
+  });
+</script>
