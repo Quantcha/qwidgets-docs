@@ -1,0 +1,20 @@
+{%- comment -%}
+  Marks a step, section, or page that needs more than guest access.
+  Usage: {% include needs.html tier="account" %}
+         {% include needs.html tier="brokerage" scope="tutorial" %}
+  tier: account | brokerage | kalshi. scope: what "this" refers to (default "step").
+  Only for what needs an account or a connection. Never mark what works as a guest.
+{%- endcomment -%}
+{%- assign needs_scope = include.scope | default: "step" -%}
+{%- case include.tier -%}
+  {%- when "account" -%}
+    {%- assign needs_what = "a free Qwidgets account" -%}
+    {%- assign needs_why = "/accounts/why-sign-in/" -%}
+  {%- when "kalshi" -%}
+    {%- assign needs_what = "a connected Kalshi account" -%}
+    {%- assign needs_why = "/accounts/why-connect/#kalshi" -%}
+  {%- else -%}
+    {%- assign needs_what = "a connected brokerage" -%}
+    {%- assign needs_why = "/accounts/why-connect/" -%}
+{%- endcase -%}
+<p class="qw-needs">You need {{ needs_what }} for this {{ needs_scope }}. <a href="{{ needs_why | relative_url }}">Why?</a></p>

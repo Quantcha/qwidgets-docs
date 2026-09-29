@@ -1,18 +1,18 @@
 ---
 title: Check the calendar before you sell
-parent: The Wheel
+parent: Covered calls and the Wheel
 grand_parent: Lessons
-permalink: /lessons/the-wheel/check-the-calendar/
-nav_order: 5
+permalink: /lessons/covered-calls-and-the-wheel/check-the-calendar/
+redirect_from:
+  - /lessons/the-wheel/check-the-calendar/
+nav_order: 9
 section: lessons
 description: "A put that expires after a scheduled announcement carries its risk. How options and event contracts each describe that risk, and what to check before you sell."
 ---
 
 # Check the calendar before you sell
 
-**Works as a guest.**
-
-Some of the biggest moves in a stock or a fund happen on days you can see coming: an earnings report, a central bank's rate decision, an inflation or jobs release. A cash-secured put that expires after one of those days carries its risk, whatever else you think about the trade. This lesson looks at how to see that risk before you sell.
+Some of the biggest moves in a stock or a fund happen on days you can see coming: an earnings report, a central bank's rate decision, an inflation or jobs release. An option you sell that expires after one of those days carries its risk, whatever else you think about the trade. This lesson looks at how to see that risk before you sell.
 
 ## What the options already tell you
 
@@ -36,6 +36,8 @@ Before selling a put that spans an announcement, ask:
 - **How likely do the event contracts say that outcome is?** An outcome priced at a small implied probability is a surprise if it happens, and surprises are what move prices.
 - **Is the premium worth carrying it?** The extra premium from the announcement is what the market charges for exactly this risk.
 
+The same questions apply to a covered call, in the other direction: a call that expires after an announcement caps a good surprise. If the announcement is the reason you own the shares, selling a call through it gives away the outcome you were waiting for.
+
 {: .note }
 This lesson uses event contracts as information about an announcement. They aren't a hedge for the put, and whether to take a position in them is a separate decision.
 
@@ -44,7 +46,13 @@ This lesson uses event contracts as information about an announcement. They aren
 
 ## For single stocks: earnings
 
-For a single company, the announcement that matters most is usually its own earnings report. The [Trade Screener]({{ '/options/trade-screener/' | relative_url }}) has filters for events before expiration, including earnings, so you can leave those puts out of a screen or look only at them. [Screen for cash-secured puts]({{ '/tutorials/screen-for-secured-puts/' | relative_url }}) uses one.
+For a single company, the announcement that matters most is usually its own earnings report. The [Trade Screener]({{ '/options/trade-screener/' | relative_url }}) has filters for events before expiration, including earnings, so you can leave those options out of a screen or look only at them. [Screen for covered calls and cash-secured puts]({{ '/tutorials/screen-for-covered-calls/' | relative_url }}) uses one.
+
+## Dividends and early assignment
+
+A covered call has one date of its own to watch: the stock's **ex-dividend date**. Whoever owns the shares the day before it collects the dividend. If your call is in the money and the dividend is larger than the time value left in the call, its owner may exercise early to collect the dividend, and your shares are called away before expiration, taking the dividend with them.
+
+It isn't a loss beyond what the covered call already allowed: you sell at the strike, as agreed. But it can end a position earlier than planned, just before a payment you were counting on. The [Trade Screener]({{ '/options/trade-screener/' | relative_url }}) can filter on **Dividend before expiration**.
 
 {% include quiz.html id="wheel-calendar-sources" %}
 

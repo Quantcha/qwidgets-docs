@@ -1,0 +1,14 @@
+question: "The shares fall sharply before your covered call expires. Compared with owning the shares alone, how much does the covered call protect you?"
+choices:
+  - text: "By the premium, and no more."
+    correct: true
+    explanation: "The call expires worthless when the shares fall, so you keep the premium. That's the whole cushion; every dollar of the fall below that is still yours."
+  - text: "Fully below the strike."
+    correct: false
+    explanation: "The strike limits your gain, not your loss. Below it, a covered call falls with the shares."
+  - text: "Not at all; the call loses money too."
+    correct: false
+    explanation: "A short call gains as the shares fall, because it loses value and expires. That gain is the premium you keep."
+  - text: "It depends on how far the shares fall; a larger fall is cushioned more."
+    correct: false
+    explanation: "The cushion is fixed at the premium you collected. A larger fall just leaves more of the loss uncovered."

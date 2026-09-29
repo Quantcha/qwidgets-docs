@@ -38,7 +38,7 @@ The legs table at the bottom holds the trade:
   - **Probability**: the chance the underlying lands in the range.
   - **Win in range**: the chance the trade is profitable, *given* it lands in the range.
 
-These come from a model with stated assumptions; see [How Qwidgets estimates the chance of profit]({{ '/explainers/chance-of-profit/' | relative_url }}) and [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}#probabilities). For a walkthrough, see [Analyze a cash-secured put]({{ '/tutorials/analyze-a-secured-put/' | relative_url }}).
+These come from a model with stated assumptions; see [How Qwidgets estimates the chance of profit]({{ '/explainers/chance-of-profit/' | relative_url }}) and [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}#probabilities). For walkthroughs, see [Analyze a covered call]({{ '/tutorials/analyze-a-covered-call/' | relative_url }}) and [Analyze a cash-secured put]({{ '/tutorials/analyze-a-secured-put/' | relative_url }}).
 
 ## Take it further
 

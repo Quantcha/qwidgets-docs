@@ -13,4 +13,4 @@ Each lesson takes one trading idea and makes its case with Qwidgets: the positio
 
 Lessons are grouped into paths, read in order. Nothing in them is investment advice; see [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}).
 
-- [The Wheel]({{ '/lessons/the-wheel/' | relative_url }}): sell cash-secured puts, and covered calls if you're assigned. What it is, where its premium comes from, how it goes wrong, and how to find and track one.
+- [Covered calls and the Wheel]({{ '/lessons/covered-calls-and-the-wheel/' | relative_url }}): what a covered call sells, where its premium comes from, what happens when the stock falls or rises, and how the Wheel and other styles build on it.

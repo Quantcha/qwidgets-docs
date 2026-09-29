@@ -2,7 +2,7 @@
 title: Kalshi account
 parent: Accounts and connections
 permalink: /accounts/kalshi/
-nav_order: 3
+nav_order: 5
 section: accounts
 description: Your Kalshi portfolio, orders, settlements, and trading from Qwidgets.
 ---

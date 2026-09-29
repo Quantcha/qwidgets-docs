@@ -2,7 +2,7 @@
 title: Brokerage accounts
 parent: Accounts and connections
 permalink: /accounts/brokerage/
-nav_order: 2
+nav_order: 4
 has_children: true
 section: accounts
 description: Your brokerage account's portfolio, orders, and trade ticket.

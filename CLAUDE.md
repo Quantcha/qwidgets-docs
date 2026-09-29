@@ -46,7 +46,7 @@ A tutorial walks one reader through one task, start to finish, with a screenshot
 - One task a real reader does, ending at a result they can act on: a number they read, a decision they can make, an order they could place. "Roll a short call that's being tested" is a tutorial; "a tour of the option chain" is a landing page.
 - It uses what ships today, across one or two pages or widgets. A task that needs five features probably wants two tutorials.
 - It teaches one idea worth checking with a question. If there's nothing to ask about, it's probably a how-to paragraph on a landing page instead.
-- Say what it needs: guest, signed in, or a connected brokerage or Kalshi account. Prefer topics a guest can follow, and don't imply a connection is needed when it isn't.
+- Say what it needs with the note include (see **Access notes** under Content rules) when it needs more than a guest. Prefer topics a guest can follow, and don't imply a connection is needed when it isn't.
 
 **The page**
 1. **Front matter:** `parent: Tutorials`, `permalink: /tutorials/<task-in-kebab-case>/`, `section: tutorials`, the next `nav_order`, and a `description` that states the task and its result in one sentence.
@@ -74,7 +74,7 @@ A lesson makes the case for one trading idea, with Qwidgets as the evidence: the
 **The page**
 1. **Front matter:** `parent: <path title>`, `grand_parent: Lessons`, `permalink: /lessons/<path>/<idea-in-kebab-case>/`, `section: lessons`, the next `nav_order`, and a `description` that states the idea in one sentence.
 2. **Title:** the idea, sentence case. A claim or a question is fine ("When the Wheel breaks").
-3. **Access line** as the first paragraph: "**Works as a guest.**", or what's needed and a link to get it.
+3. **Access:** mark only what needs more than a guest, with the note include (see **Access notes** under Content rules). A lesson that works as a guest says nothing about access.
 4. **The argument,** in `##` sections, with screenshots as evidence. The prose tells the reader what to look for in each screenshot and never quotes a figure from one. Round-number examples written into the prose are fine when they're plainly illustrations.
 5. **A live workspace,** where one exists: a `{: .tip }` callout linking to `{{ site.app_url }}/shared/workspace/<slug>` that says what it shows and suggests one thing to try. Never describe what the workspace currently holds (which contract, which price); its contents change.
 6. **One quiz,** on the idea.
@@ -98,6 +98,11 @@ A lesson makes the case for one trading idea, with Qwidgets as the evidence: the
 - Don't list unreleased integrations.
 - **The AI Prompt widget** gets a plain reference page: what it does and its limits. No promotion, and no mention on Home or Getting Started.
 - **Tracking, reporting, and journaling** (Campaign Journal, Performance, Transactions) are for brokerage accounts. Don't imply them for event contracts.
+
+**Access notes**
+- Mark only what needs more than a guest, with `{% include needs.html tier="account|brokerage|kalshi" %}` (and `scope="section|page|tutorial"` where it isn't a single step). It renders a quiet one-line note with a **Why?** link to [Why sign in?](accounts/why-sign-in.md) or [Why connect a brokerage?](accounts/why-connect.md).
+- Never mark what works as a guest. Mention guest access only where it lowers the barrier to trying something: Getting Started, a path hub's opening, or a tutorial a reader would otherwise assume needs an account.
+- Where a whole page needs an account or a connection, one note near the top is enough.
 
 **Access tiers** — keep them distinct everywhere:
 - **Guest:** most of the functionality; nothing is kept between sessions.

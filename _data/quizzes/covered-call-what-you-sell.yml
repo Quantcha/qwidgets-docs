@@ -1,0 +1,14 @@
+question: "You own 100 shares and sell a covered call with a strike above today's price. What have you given up in exchange for the premium?"
+choices:
+  - text: "Any gain above the strike before expiration."
+    correct: true
+    explanation: "If the shares finish above the strike, they're called away at the strike. The premium is what you're paid for that upside."
+  - text: "Protection against the shares falling."
+    correct: false
+    explanation: "You never had that protection; shares on their own take every dollar of a fall. The covered call keeps that exposure and adds the premium as a small cushion."
+  - text: "Nothing. The premium is extra income on top of owning the shares."
+    correct: false
+    explanation: "The premium comes with an obligation. If the shares rise past the strike, you sell them at the strike and miss the rest of the rise."
+  - text: "The dividends on the shares."
+    correct: false
+    explanation: "You keep the shares, and their dividends, until they're called away. Early assignment just before an ex-dividend date is the exception to watch for."

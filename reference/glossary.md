@@ -57,6 +57,9 @@ Covered call
 Days to expiration
 : The calendar days left until an option expires, often written DTE.
 
+Ex-dividend date
+: The first day a stock trades without its next dividend. Whoever owns the shares the day before collects it, which is why in-the-money calls are sometimes exercised just before it.
+
 Exit rate
 : The interest rate the book assumes at the target date.
 
@@ -93,6 +96,9 @@ Price path
 Requirement basis
 : How the stress tester estimates the account's requirement: **Margin (Reg T)** or **Cash-secured**.
 
+Roll
+: Closing an option and opening another on the same underlying, usually at a later expiration, a different strike, or both. Rolling up and out moves a call to a higher strike and a later expiration.
+
 Stress test
 : Repricing every position in an account under prices and volatility you choose. It's a scenario, not a forecast.
 
@@ -103,7 +109,7 @@ Volatility risk premium
 : The tendency, over long periods, for implied volatility to be higher than the volatility that follows. It's why option sellers have tended to be paid over time, and it's not guaranteed.
 
 Wheel
-: A strategy that sells cash-secured puts, sells covered calls on the shares if a put is assigned, and starts again with puts once the shares are called away. See [The Wheel]({{ '/lessons/the-wheel/' | relative_url }}).
+: A strategy that sells cash-secured puts, sells covered calls on the shares if a put is assigned, and starts again with puts once the shares are called away. See [Covered calls and the Wheel]({{ '/lessons/covered-calls-and-the-wheel/' | relative_url }}).
 
 ## Prediction markets
 
