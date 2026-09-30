@@ -116,3 +116,92 @@
   color: $body-text-color;
   opacity: 0.85;
 }
+
+// Path navigation on pages that are steps in a path (_includes/path_bar.html)
+.qw-path {
+  font-size: 0.875rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.qw-path-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  align-items: baseline;
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 0.75rem;
+  background: $sidebar-color;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+}
+
+.qw-path-title {
+  font-weight: 700;
+}
+
+.qw-path-count {
+  color: $nav-child-link-color;
+}
+
+.qw-path-arrows {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.qw-path-bottom {
+  margin: 2.5rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid $border-color;
+}
+
+.qw-path-label {
+  margin: 0 0 0.75rem;
+  color: $nav-child-link-color;
+}
+
+.qw-path-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 1rem;
+    background: $sidebar-color;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+
+    &:hover {
+      border-color: $link-color;
+    }
+  }
+}
+
+.qw-path-next {
+  grid-column: 2;
+  text-align: right;
+
+  @media (max-width: 40rem) {
+    grid-column: 1;
+  }
+}
+
+.qw-path-kind {
+  color: $nav-child-link-color;
+  font-size: 0.8rem;
+}
+
+.qw-path-step {
+  color: $link-color;
+  font-weight: 700;
+}

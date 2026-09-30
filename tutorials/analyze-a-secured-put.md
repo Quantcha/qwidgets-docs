@@ -65,7 +65,6 @@ The credit rises, the breakeven rises with it, and **Win in range** falls. You'r
 
 ## What's next
 
-- [Covered calls and the Wheel]({{ '/lessons/covered-calls-and-the-wheel/' | relative_url }}): the learning path this tutorial belongs to.
 - [Trade analysis]({{ '/options/trade-analysis/' | relative_url }}): every setting on the page.
 - [How Qwidgets estimates the chance of profit]({{ '/explainers/chance-of-profit/' | relative_url }}): the model behind **Win in range**.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): these are models, not forecasts, and not investment advice.

@@ -1,0 +1,10 @@
+{%- comment -%}
+  A path hub's reading list, from _data/paths/<path>.yml.
+  Usage: {% include path_steps.html path="covered-calls-and-the-wheel" %}
+{%- endcomment -%}
+{%- assign path = site.data.paths[include.path] -%}
+<ol class="qw-path-steps" data-path-hub="{{ include.path }}">
+{%- for step in path.steps %}
+  <li><strong>{{ step.type }}:</strong> <a href="{{ step.url | relative_url }}">{{ step.title }}</a>. {{ step.summary | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+{%- endfor %}
+</ol>

@@ -42,6 +42,5 @@ This is why Qwidgets treats options and event contracts with different tools, ev
 
 ## What's next
 
-- [Covered calls and the Wheel]({{ '/lessons/covered-calls-and-the-wheel/' | relative_url }}): back to the start of the path.
 - [Events and markets]({{ '/prediction-markets/events-and-markets/' | relative_url }}): reading an event's implied probabilities.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): not investment advice.

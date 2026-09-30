@@ -20,21 +20,7 @@ Read it in order. The lessons make the argument, the tutorials put it to work, a
 
 ## The path
 
-1. **Lesson:** [Covered calls: what you're selling]({{ '/lessons/covered-calls-and-the-wheel/covered-calls/' | relative_url }}). Shares with a short call, and the upside you trade for the premium.
-2. **Tutorial:** [Analyze a covered call]({{ '/tutorials/analyze-a-covered-call/' | relative_url }}). Build one in Trade analysis and read what it risks and returns.
-3. **Explainer:** [How Qwidgets estimates the chance of profit]({{ '/explainers/chance-of-profit/' | relative_url }}). What **Probability**, **Win in range**, and **Expected Value** assume.
-4. **Lesson:** [Choosing strikes and expirations]({{ '/lessons/covered-calls-and-the-wheel/choosing-strikes-and-expirations/' | relative_url }}). Premium against the chance your shares are called away.
-5. **Tutorial:** [Screen for covered calls and cash-secured puts]({{ '/tutorials/screen-for-covered-calls/' | relative_url }}). Search the whole market with the Trade Screener.
-6. **Lesson:** [Where the premium comes from]({{ '/lessons/covered-calls-and-the-wheel/where-the-premium-comes-from/' | relative_url }}). What option sellers are paid for, and what they give up.
-7. **Lesson:** [When the stock falls]({{ '/lessons/covered-calls-and-the-wheel/when-the-stock-falls/' | relative_url }}). What the premium does and doesn't protect.
-8. **Lesson:** [When the stock rises]({{ '/lessons/covered-calls-and-the-wheel/when-the-stock-rises/' | relative_url }}). Getting called away, and rolling up and out.
-9. **Lesson:** [Cash-secured puts: the same position from the other side]({{ '/lessons/covered-calls-and-the-wheel/cash-secured-puts/' | relative_url }}). Why a short put and a covered call nearly match.
-10. **Tutorial:** [Analyze a cash-secured put]({{ '/tutorials/analyze-a-secured-put/' | relative_url }}). The put side in Trade analysis.
-11. **Lesson:** [Three ways to run it]({{ '/lessons/covered-calls-and-the-wheel/three-ways-to-run-it/' | relative_url }}). Covered calls on shares you keep, the Wheel, and selling puts, including what to do after a sharp fall.
-12. **Lesson:** [When to roll, and the arguments about it]({{ '/lessons/covered-calls-and-the-wheel/when-to-roll/' | relative_url }}). The decision points, and what each camp says.
-13. **Lesson:** [Check the calendar before you sell]({{ '/lessons/covered-calls-and-the-wheel/check-the-calendar/' | relative_url }}). Earnings, dividends, and scheduled announcements.
-14. **Tutorial:** [Follow a Wheel in the Campaign Journal]({{ '/tutorials/follow-a-wheel-campaign/' | relative_url }}). A whole Wheel on one timeline.
-15. **Lesson:** [Why it doesn't carry over to event contracts]({{ '/lessons/covered-calls-and-the-wheel/event-contracts/' | relative_url }}). The same idea on a different instrument, and why it doesn't work there.
+{% include path_steps.html path="covered-calls-and-the-wheel" %}
 
 ## Live workspaces
 

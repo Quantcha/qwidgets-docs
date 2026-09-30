@@ -53,5 +53,4 @@ Some real differences remain. A cash-secured put ties up cash equal to the strik
 ## What's next
 
 - [Analyze a cash-secured put]({{ '/tutorials/analyze-a-secured-put/' | relative_url }}): build the put side yourself.
-- [Three ways to run it]({{ '/lessons/covered-calls-and-the-wheel/three-ways-to-run-it/' | relative_url }}): the next lesson in the path.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): not investment advice.

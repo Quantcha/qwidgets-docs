@@ -60,7 +60,7 @@ A tutorial walks one reader through one task, start to finish, with a screenshot
 **Consistency**
 - Every screenshot in a tutorial comes from one session, so the same positions and prices carry through every step. Figures in one step must agree with the next.
 - Steps follow the fastest real route through the app. Mention an alternative route only if it's how most readers will arrive.
-- Add the tutorial to the list on the Tutorials index (`tutorials/index.md`) with a one-line description.
+- Add the tutorial to the list on the Tutorials index (`tutorials/index.md`) with a one-line description. If it belongs in a path, add it to the path's data file too.
 - Link to the tutorial from the landing pages it teaches, where it helps a reader who's already there.
 
 ## Lessons
@@ -68,8 +68,9 @@ A tutorial walks one reader through one task, start to finish, with a screenshot
 A lesson makes the case for one trading idea, with Qwidgets as the evidence: the positions, the payoff charts, and what they show. The reader reads it rather than follows it. A tutorial teaches a task; an explainer teaches how Qwidgets models something; a lesson teaches an idea about trading.
 
 **Paths**
-- Lessons are grouped into paths. A path is a hub page under Lessons (`/lessons/<path>/`, `has_children: true`) that lists every piece in reading order—its lessons, and the tutorials and explainers that belong with them—each labeled with its type. The lessons are the hub's children; tutorials and explainers stay in their own sections, and the hub links to them.
-- Each piece makes sense on its own. Only the hub knows the order.
+- Lessons are grouped into paths. A path is a hub page under Lessons (`/lessons/<path>/`, `has_children: true`) whose reading order includes its lessons and the tutorials and explainers that belong with them. The lessons are the hub's children; tutorials and explainers stay in their own sections.
+- The reading order lives in one place: `_data/paths/<path>.yml` (`title`, the hub's `url`, and `steps`, each with `type`, `title`, `url`, and a one-line `summary`). The hub renders its list with `{% include path_steps.html path="<path>" %}`, and every page listed as a step gets a path bar above and below its content (step count, previous, next), whatever section it's in. Adding, removing, or reordering a step is an edit to that file alone.
+- Each piece makes sense on its own. Never write "the next lesson in the path" links on a page; the path bar carries the reader, and a tutorial or explainer can belong to more than one path.
 
 **The page**
 1. **Front matter:** `parent: <path title>`, `grand_parent: Lessons`, `permalink: /lessons/<path>/<idea-in-kebab-case>/`, `section: lessons`, the next `nav_order`, and a `description` that states the idea in one sentence.
@@ -78,7 +79,7 @@ A lesson makes the case for one trading idea, with Qwidgets as the evidence: the
 4. **The argument,** in `##` sections, with screenshots as evidence. The prose tells the reader what to look for in each screenshot and never quotes a figure from one. Round-number examples written into the prose are fine when they're plainly illustrations.
 5. **A live workspace,** where one exists: a `{: .tip }` callout linking to `{{ site.app_url }}/shared/workspace/<slug>` that says what it shows and suggests one thing to try. Never describe what the workspace currently holds (which contract, which price); its contents change.
 6. **One quiz,** on the idea.
-7. **What's next:** the next piece in the path, and the pages and explainers the lesson leans on.
+7. **What's next:** the pages and explainers the lesson leans on. The path bar links the next piece.
 
 **Balance**
 - A lesson that shows a strategy's appeal shows its downside at least as clearly, and links to Disclosures & Model Limits.

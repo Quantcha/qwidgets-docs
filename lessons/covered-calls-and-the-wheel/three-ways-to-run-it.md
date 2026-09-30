@@ -67,6 +67,5 @@ One roll deserves a warning: rolling a losing put **down and out** for a credit,
 
 ## What's next
 
-- [When to roll, and the arguments about it]({{ '/lessons/covered-calls-and-the-wheel/when-to-roll/' | relative_url }}): the next lesson in the path.
 - [Follow a Wheel in the Campaign Journal]({{ '/tutorials/follow-a-wheel-campaign/' | relative_url }}): what a whole Wheel looks like in a connected account.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): not investment advice.

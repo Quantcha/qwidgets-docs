@@ -56,7 +56,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: default
+      layout: docs
 
 exclude:
   - README.md

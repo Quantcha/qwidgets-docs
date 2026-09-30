@@ -55,5 +55,4 @@ When you're ready, and with a brokerage connected, **Roll Position** on an optio
 
 ## What's next
 
-- [Check the calendar before you sell]({{ '/lessons/covered-calls-and-the-wheel/check-the-calendar/' | relative_url }}): the next lesson in the path.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): not investment advice.

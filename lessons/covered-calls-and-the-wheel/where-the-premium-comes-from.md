@@ -46,6 +46,5 @@ Qwidgets' probabilities are built from implied volatility, the market's own figu
 
 ## What's next
 
-- [When the stock falls]({{ '/lessons/covered-calls-and-the-wheel/when-the-stock-falls/' | relative_url }}): the next lesson in the path.
 - [How Qwidgets estimates the chance of profit]({{ '/explainers/chance-of-profit/' | relative_url }}): what the model assumes about volatility.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): not investment advice, and what the models simplify.

@@ -71,4 +71,3 @@ Use your browser's back button to return to the screen, and set **Strategy** to 
 
 - [Trade screener]({{ '/options/trade-screener/' | relative_url }}): every strategy, ranking, and filter.
 - [Choosing strikes and expirations]({{ '/lessons/covered-calls-and-the-wheel/choosing-strikes-and-expirations/' | relative_url }}): what the delta range is choosing between.
-- [Covered calls and the Wheel]({{ '/lessons/covered-calls-and-the-wheel/' | relative_url }}): the learning path this tutorial belongs to.

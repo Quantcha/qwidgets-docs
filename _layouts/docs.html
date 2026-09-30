@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{%- comment -%}
+  Every page's layout (set in _config.yml defaults). Adds the path bar to pages that are steps
+  in a path; everything else renders exactly as the theme's default layout.
+{%- endcomment -%}
+{% include path_bar.html position="top" %}
+{{ content }}
+{% include path_bar.html position="bottom" %}

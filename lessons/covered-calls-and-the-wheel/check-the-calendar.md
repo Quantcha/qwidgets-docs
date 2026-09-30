@@ -58,6 +58,5 @@ It isn't a loss beyond what the covered call already allowed: you sell at the st
 
 ## What's next
 
-- [Follow a Wheel in the Campaign Journal]({{ '/tutorials/follow-a-wheel-campaign/' | relative_url }}): the next piece in the path.
 - [Events and markets]({{ '/prediction-markets/events-and-markets/' | relative_url }}): how to read an event's page and its chart.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): not investment advice.
