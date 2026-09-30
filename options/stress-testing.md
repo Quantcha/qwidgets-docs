@@ -17,7 +17,7 @@ The stress tester reprices every position in a brokerage account at prices and v
 
 ## Set the scenario
 
-- **Target date:** defaults to the next expiration the account holds.
+- **Target date:** defaults to the next expiration the account holds. The outer buttons either side of it jump to the previous or next expiration the account holds, and the inner ones step a week back or forward.
 - **Target rate:** leave it blank to use the published rate curve.
 - **At expiration:** **Cash-settle**, **Always exercise**, or **Exercise if covered**.
 - **Requirement basis:** **Margin (Reg T)** or **Cash-secured**, with a **House multiplier** for margin.

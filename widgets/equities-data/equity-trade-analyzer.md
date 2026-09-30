@@ -24,7 +24,7 @@ Price a multi-leg trade and see what it returns across your price forecast. It w
 
 ## Settings
 
-- The top bar sets the **target date** the trade is evaluated at, and how fills are priced, from **Taker** to **Maker**.
+- The top bar sets the **target date** the trade is evaluated at, with buttons to jump to the previous or next expiration of a leg or step a week either way, and how fills are priced, from **Taker** to **Maker**.
 - **Configure** sets the **Provider** and **Underlying**, and whether to **Show annualized returns**.
 - The book icon models the trade in a [Book]({{ '/widgets/equity-book/' | relative_url }}) widget with your positions.
 

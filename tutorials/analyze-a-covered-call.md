@@ -25,7 +25,7 @@ Select **Stocks & Options** in the left-hand menu, search for the symbol, and op
 2. On the new row, select **Buy** to switch it to **Sell**. Leave it on **Call**. The quantity is already 1, which covers the 100 shares.
 3. Pick an **Expiration** about 30 to 45 days out, then a **Strike** above the current price.
 4. Read the row's **Delta**. It shows the position's delta per 100 shares, so a short call whose contract delta is 0.30 reads about **−30**. Try strikes until it's near −30.
-5. Set the date above the chart to the call's expiration; expiration dates are marked in the calendar.
+5. Set the date above the chart to the call's expiration: select the next-expiration button to the right of the date, or pick it in the calendar, where expiration dates are marked.
 
 {% include shot.html id="covered-call-leg" alt="Trade analysis of 100 shares with a short call, valued at the call's expiration: the payoff rises with the shares up to the strike, then goes flat." %}
 

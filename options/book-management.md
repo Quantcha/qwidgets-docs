@@ -23,7 +23,7 @@ A book is everything one brokerage account holds in one underlying: shares and o
 
 ## Assumptions
 
-- **Target date:** the date the book is valued at. The arrows step to the previous or next expiration, or back and forward a week.
+- **Target date:** the date the book is valued at. The outer buttons either side of it jump to the previous or next expiration of a position you hold or have pending, and the inner ones step a week back or forward. Stepping back stops at today; stepping forward always moves, even past the last expiration.
 - **Exit volatility** and **Exit rate:** **Current market**, or a custom value.
 - **At expiration:** how a contract that expires before the target date is handled: **Cash-settle**, **Always exercise**, or **Exercise if covered**.
 - **Fill assumption:** where you expect to trade the changes, from **Taker** to **Maker**.

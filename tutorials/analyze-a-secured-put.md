@@ -26,7 +26,7 @@ Select **Stocks & Options** in the left-hand menu, search for the symbol, and op
 3. On the new row, select **Buy** to switch it to **Sell**, and **Call** to switch it to **Put**. The quantity is already 1.
 4. Pick an **Expiration** about 30 to 45 days out, then a **Strike** below the current price.
 5. Read the row's **Delta**. It shows the position's delta, per 100 shares, so a short put whose contract delta is −0.30 reads about **30**. Try strikes until it's near 30.
-6. Set the date above the chart to the put's expiration; expiration dates are marked in the calendar. Until you do, the chart values the trade 30 days out, which may be before the put expires.
+6. Set the date above the chart to the put's expiration: select the next-expiration button to the right of the date, or pick it in the calendar, where expiration dates are marked. Until you do, the chart values the trade 30 days out, which may be before the put expires.
 
 {% include shot.html id="secured-put-leg" alt="Trade analysis with one short put, valued at its expiration: the credit, amount at risk, and breakeven above a payoff chart that's flat to the right of the strike and falls to the left." %}
 
