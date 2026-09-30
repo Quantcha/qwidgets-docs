@@ -23,7 +23,7 @@ One underlying's positions in an account, and what they're worth now and at a ta
 
 ## Settings
 
-- The top bar sets the **target date**; the arrows step through expirations.
+- The top bar sets the **target date**; the buttons either side jump between the expirations of positions held or pending, or step a week either way.
 - With pending changes, the ticket button trades them and the reset button returns to what you hold.
 - The link button opens the book page to edit positions and exit assumptions.
 - **Configure** sets the **Brokerage**, **Account**, and **Underlying**.

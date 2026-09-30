@@ -23,7 +23,7 @@ The legs table at the bottom holds the trade:
 
 ## Set the assumptions
 
-- **Date:** the date the trade is valued at. Dates a leg expires are bold.
+- **Date:** the date the trade is valued at. The outer buttons either side of it jump to the previous or next expiration of a leg, and the inner ones step a week back or forward. Dates a leg expires are bold in the calendar. A trade opened without a date starts at its earliest expiration still ahead, or 30 days out if it holds no options, and keeps that date until you change it.
 - **Fill assumption:** where between the bid and the ask you expect to trade, from **Taker** to **Maker**. The midpoint is the default.
 - **Forecast:** drag the range under the chart, or across the chart itself, to say where you think the underlying will be.
 - **Size to a budget** (the icon next to **At risk**): enter **Most I want at risk** and the trade is scaled to fit.
