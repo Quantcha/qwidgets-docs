@@ -1,0 +1,65 @@
+# Reading order for the Covered calls and the Wheel path. The hub renders its list from this
+# file, and every page listed here gets a path bar linking the steps before and after it.
+title: Covered calls and the Wheel
+url: /lessons/covered-calls-and-the-wheel/
+steps:
+  - type: Lesson
+    title: "Covered calls: what you're selling"
+    url: /lessons/covered-calls-and-the-wheel/covered-calls/
+    summary: Shares with a short call, and the upside you trade for the premium.
+  - type: Tutorial
+    title: Analyze a covered call
+    url: /tutorials/analyze-a-covered-call/
+    summary: Build one in Trade analysis and read what it risks and returns.
+  - type: Explainer
+    title: How Qwidgets estimates the chance of profit
+    url: /explainers/chance-of-profit/
+    summary: "What **Probability**, **Win in range**, and **Expected Value** assume."
+  - type: Lesson
+    title: Choosing strikes and expirations
+    url: /lessons/covered-calls-and-the-wheel/choosing-strikes-and-expirations/
+    summary: Premium against the chance your shares are called away.
+  - type: Tutorial
+    title: Screen for covered calls and cash-secured puts
+    url: /tutorials/screen-for-covered-calls/
+    summary: Search the whole market with the Trade Screener.
+  - type: Lesson
+    title: Where the premium comes from
+    url: /lessons/covered-calls-and-the-wheel/where-the-premium-comes-from/
+    summary: What option sellers are paid for, and what they give up.
+  - type: Lesson
+    title: When the stock falls
+    url: /lessons/covered-calls-and-the-wheel/when-the-stock-falls/
+    summary: What the premium does and doesn't protect.
+  - type: Lesson
+    title: When the stock rises
+    url: /lessons/covered-calls-and-the-wheel/when-the-stock-rises/
+    summary: Getting called away, and rolling up and out.
+  - type: Lesson
+    title: "Cash-secured puts: the same position from the other side"
+    url: /lessons/covered-calls-and-the-wheel/cash-secured-puts/
+    summary: Why a short put and a covered call nearly match.
+  - type: Tutorial
+    title: Analyze a cash-secured put
+    url: /tutorials/analyze-a-secured-put/
+    summary: The put side in Trade analysis.
+  - type: Lesson
+    title: Three ways to run it
+    url: /lessons/covered-calls-and-the-wheel/three-ways-to-run-it/
+    summary: Covered calls on shares you keep, the Wheel, and selling puts, including what to do after a sharp fall.
+  - type: Lesson
+    title: When to roll, and the arguments about it
+    url: /lessons/covered-calls-and-the-wheel/when-to-roll/
+    summary: The decision points, and what each camp says.
+  - type: Lesson
+    title: Check the calendar before you sell
+    url: /lessons/covered-calls-and-the-wheel/check-the-calendar/
+    summary: Earnings, dividends, and scheduled announcements.
+  - type: Tutorial
+    title: Follow a Wheel in the Campaign Journal
+    url: /tutorials/follow-a-wheel-campaign/
+    summary: A whole Wheel on one timeline.
+  - type: Lesson
+    title: Why it doesn't carry over to event contracts
+    url: /lessons/covered-calls-and-the-wheel/event-contracts/
+    summary: The same idea on a different instrument, and why it doesn't work there.

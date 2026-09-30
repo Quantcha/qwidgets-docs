@@ -10,3 +10,26 @@
     link.rel = "noopener";
   });
 </script>
+
+<script>
+  // A page in several paths gets a path bar for each. Keep the one for the path this tab is
+  // following: the last path hub opened, or the path whose bar the reader last clicked.
+  (function () {
+    var key = "qw-path";
+    function remember(path) { try { sessionStorage.setItem(key, path); } catch (e) {} }
+    var hub = document.querySelector("[data-path-hub]");
+    if (hub) remember(hub.getAttribute("data-path-hub"));
+    var bars = document.querySelectorAll(".qw-path");
+    bars.forEach(function (bar) {
+      bar.addEventListener("click", function (event) {
+        if (event.target.closest("a")) remember(bar.getAttribute("data-path"));
+      });
+    });
+    var following = null;
+    try { following = sessionStorage.getItem(key); } catch (e) {}
+    var paths = Array.from(new Set(Array.from(bars, function (bar) { return bar.getAttribute("data-path"); })));
+    if (paths.length > 1 && paths.indexOf(following) >= 0) {
+      bars.forEach(function (bar) { bar.hidden = bar.getAttribute("data-path") !== following; });
+    }
+  })();
+</script>

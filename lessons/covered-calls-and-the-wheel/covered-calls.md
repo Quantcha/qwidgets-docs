@@ -60,5 +60,4 @@ A few mechanics worth knowing from the start:
 ## What's next
 
 - [Analyze a covered call]({{ '/tutorials/analyze-a-covered-call/' | relative_url }}): build one yourself and read its figures.
-- [Choosing strikes and expirations]({{ '/lessons/covered-calls-and-the-wheel/choosing-strikes-and-expirations/' | relative_url }}): the next lesson in the path.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): these are models, not forecasts, and not investment advice.

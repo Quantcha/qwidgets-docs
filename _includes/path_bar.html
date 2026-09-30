@@ -1,0 +1,64 @@
+{%- comment -%}
+  Path navigation for any page listed as a step in _data/paths/*.yml. Rendered by the docs
+  layout above and below the content; pages outside every path get nothing.
+  Usage: {% include path_bar.html position="top" %} or position="bottom".
+  A page in several paths gets one bar per path, and a script in footer_custom.html keeps the
+  one for the path the reader is following.
+{%- endcomment -%}
+{%- for path_entry in site.data.paths -%}
+  {%- assign path_key = path_entry[0] -%}
+  {%- assign path = path_entry[1] -%}
+  {%- for step in path.steps -%}
+    {%- if step.url == page.url -%}
+      {%- assign step_number = forloop.index -%}
+      {%- assign step_count = forloop.length -%}
+      {%- assign prev_step = nil -%}
+      {%- assign next_step = nil -%}
+      {%- unless forloop.first -%}
+        {%- assign prev_index = forloop.index0 | minus: 1 -%}
+        {%- assign prev_step = path.steps[prev_index] -%}
+      {%- endunless -%}
+      {%- unless forloop.last -%}
+        {%- assign next_step = path.steps[forloop.index] -%}
+      {%- endunless -%}
+      {%- if include.position == "top" %}
+<nav class="qw-path qw-path-top" data-path="{{ path_key }}" aria-label="{{ path.title }}">
+  <a class="qw-path-title" href="{{ path.url | relative_url }}">{{ path.title }}</a>
+  <span class="qw-path-count">Step {{ step_number }} of {{ step_count }}</span>
+  <span class="qw-path-arrows">
+    {%- if prev_step %}<a href="{{ prev_step.url | relative_url }}" rel="prev">&larr; Previous</a>{% endif -%}
+    {%- if next_step %}<a href="{{ next_step.url | relative_url }}" rel="next">Next &rarr;</a>{% endif -%}
+  </span>
+</nav>
+      {%- else %}
+<nav class="qw-path qw-path-bottom" data-path="{{ path_key }}" aria-label="{{ path.title }}">
+  <p class="qw-path-label"><a href="{{ path.url | relative_url }}">{{ path.title }}</a> &middot; Step {{ step_number }} of {{ step_count }}</p>
+  <div class="qw-path-links">
+    {%- if prev_step %}
+    <a class="qw-path-prev" href="{{ prev_step.url | relative_url }}" rel="prev">
+      <span class="qw-path-kind">&larr; Previous &middot; {{ prev_step.type }}</span>
+      <span class="qw-path-step">{{ prev_step.title }}</span>
+    </a>
+    {%- else %}
+    <a class="qw-path-prev" href="{{ path.url | relative_url }}">
+      <span class="qw-path-kind">&larr; The path</span>
+      <span class="qw-path-step">{{ path.title }}</span>
+    </a>
+    {%- endif %}
+    {%- if next_step %}
+    <a class="qw-path-next" href="{{ next_step.url | relative_url }}" rel="next">
+      <span class="qw-path-kind">Next &middot; {{ next_step.type }} &rarr;</span>
+      <span class="qw-path-step">{{ next_step.title }}</span>
+    </a>
+    {%- else %}
+    <a class="qw-path-next" href="{{ path.url | relative_url }}">
+      <span class="qw-path-kind">You've finished the path &rarr;</span>
+      <span class="qw-path-step">Back to {{ path.title }}</span>
+    </a>
+    {%- endif %}
+  </div>
+</nav>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}

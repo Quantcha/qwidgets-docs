@@ -49,6 +49,5 @@ With a brokerage connected, the [stress tester]({{ '/options/stress-testing/' | 
 
 ## What's next
 
-- [When the stock rises]({{ '/lessons/covered-calls-and-the-wheel/when-the-stock-rises/' | relative_url }}): the next lesson in the path.
 - [Cash-secured puts: the same position from the other side]({{ '/lessons/covered-calls-and-the-wheel/cash-secured-puts/' | relative_url }}): why a short put carries the same downside.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): what the probabilities assume. They're models, not forecasts, and not investment advice.

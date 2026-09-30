@@ -61,5 +61,4 @@ Many traders who sell covered calls choose expirations a few weeks to a couple o
 ## What's next
 
 - [Screen for covered calls and cash-secured puts]({{ '/tutorials/screen-for-covered-calls/' | relative_url }}): search the whole market for calls in the delta and expiration range you want.
-- [Where the premium comes from]({{ '/lessons/covered-calls-and-the-wheel/where-the-premium-comes-from/' | relative_url }}): the next lesson in the path.
 - [Option chain]({{ '/options/option-chain/' | relative_url }}): the **Pricing**, **Greeks**, and **Value** views.

@@ -52,6 +52,5 @@ There's no right answer, and traders disagree about it; [When to roll, and the a
 
 ## What's next
 
-- [Cash-secured puts: the same position from the other side]({{ '/lessons/covered-calls-and-the-wheel/cash-secured-puts/' | relative_url }}): the next lesson in the path.
 - [Book management]({{ '/options/book-management/' | relative_url }}): try a roll against the positions in a connected brokerage account before you trade it.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): not investment advice.

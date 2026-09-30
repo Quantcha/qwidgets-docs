@@ -58,6 +58,5 @@ The call pays less, so the debit rises and the breakeven with it. The flat part 
 
 ## What's next
 
-- [Covered calls and the Wheel]({{ '/lessons/covered-calls-and-the-wheel/' | relative_url }}): the learning path this tutorial belongs to.
 - [Trade analysis]({{ '/options/trade-analysis/' | relative_url }}): every setting on the page.
 - [Disclosures & Model Limits]({{ '/reference/disclosures/' | relative_url }}): these are models, not forecasts, and not investment advice.
