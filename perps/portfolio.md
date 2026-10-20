@@ -15,6 +15,8 @@ With a Kalshi account connected, **Accounts** under **Perps** in the left-hand m
 
 If Kalshi hasn't turned perps on for your account, the page says so instead. Perps are enabled by Kalshi, not in Qwidgets; once Kalshi turns them on, they appear with no change to the connection.
 
+{% include shot.html id="perps-portfolio" alt="A perps portfolio: balances across the top, positions grouped into the primary cross subaccount and an isolated subaccount, an open order, and campaigns." %}
+
 ## Subaccounts
 
 Kalshi holds perps in subaccounts. The **primary subaccount** (0) is a **cross** subaccount: its positions share its margin. Kalshi's own app opens each position in its own **isolated** subaccount, numbered 64 and up, with only that position's margin behind it. Qwidgets reads every subaccount and groups positions by the one they're in. Each group's header shows whether it's isolated or cross, its **Equity**, its maintenance margin (**Maint.**), and its **Buffer**: how much it can lose before liquidation.
