@@ -33,6 +33,8 @@ Kalshi takes limit orders only. A market order is sent as an immediate-or-cancel
 
 Under the inputs, the ticket shows the order's **Notional**, **Est. initial margin**, **Effective leverage** (notional ÷ estimated initial margin), **Est. liquidation** and its distance from the mark, and **Funding per day** at the current funding estimate. There's no leverage setting: Kalshi sets margin from the order's size, so leverage is a result of how many contracts you trade.
 
+{% include shot.html id="perps-ticket" alt="The perps ticket filled in to buy at the ask in the primary subaccount, with its notional, estimated margin, effective leverage, estimated liquidation, and funding per day, and the footnote beneath them." %}
+
 {: .important }
 The figures marked with an asterisk are Qwidgets' estimates, not Kalshi's, worked out from Kalshi's published leverage tables and risk parameters for the chosen subaccount on its own, before fees. Kalshi's figures govern. The liquidation estimate is more conservative than Kalshi's: it sits nearer the mark than the level Kalshi reports once the position is open. When the order would sit beside offsetting positions in a cross subaccount, the liquidation estimate is labeled **before hedge credit**.
 
@@ -43,6 +45,8 @@ The figures marked with an asterisk are Qwidgets' estimates, not Kalshi's, worke
 ### Confirm and send
 
 **Review order** restates the order, its estimates, and the disclosure. **Confirm and send** places it; **Back** returns to the ticket. Exit triggers and liquidations fire on Kalshi's mark price and fill at market, so a fill can be worse than the trigger or liquidation level.
+
+{% include shot.html id="perps-confirm" alt="The perps ticket review step, restating the order and its estimates with the disclosure, above Confirm and send and Back." %}
 
 ## Protecting a position
 
