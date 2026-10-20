@@ -71,6 +71,17 @@ These are estimates from Qwidgets' own prices. Your brokerage applies its own ho
 - **Implied probabilities** are read from each market's midpoint price. Within an event whose outcomes are mutually exclusive, they're scaled to add up to 100%.
 - **The Prediction Distribution Builder** sizes positions from probabilities you assign, using a method you choose, such as Kelly. Its output follows from your probabilities, so it's only as good as they are.
 
+## Perps
+
+- **Kalshi's figures govern.** Margin, leverage, liquidation prices, and P&L on your positions are what Kalshi reports. Figures Qwidgets works out itself are marked with an asterisk wherever they appear, and are never presented as Kalshi's.
+- **Order estimates.** The trade ticket's estimated initial margin, effective leverage, liquidation price, and funding per day come from Kalshi's published leverage tables and risk parameters, for the chosen subaccount on its own and before fees. Kalshi sets the actual margin and liquidation level when the order fills.
+- **The liquidation estimate is conservative.** It puts liquidation where the subaccount's equity falls to its maintenance margin, so it sits nearer the mark than Kalshi's own estimate, which is shown once the position is open.
+- **Hedge credit.** Kalshi can margin positions in the same asset class together within a subaccount. The ticket's estimates don't model that credit, and say **before hedge credit** when it would apply. Positions held in separate subaccounts get no hedge credit from each other at all.
+- **Fills.** Exit triggers and liquidations fire on Kalshi's liquidation mark and fill at market, so a fill can be worse than the trigger or liquidation level.
+- **Funding.** Funding per day is the current funding estimate held for a day at the current mark. The rate changes every period. Annualized funding multiplies the rate by the periods in a year, without compounding.
+- **Funding in P&L.** Kalshi's unrealized P&L is price only. Qwidgets adds the funding payments made over a position's life as their own line, so net P&L counts funding once.
+- **A stale index.** When an open market's index hasn't updated for more than 15 minutes, basis and premium are measured against an old value and are dimmed.
+
 ## AI compute
 
 Kalshi lists binary markets on GPU rental prices. Those binaries are real, tradable markets. Everything [AI compute]({{ '/compute/' | relative_url }}) builds from them is **derived**: futures, options, the perpetual, the forward curve, and volatility. They're computed from the binaries' prices, aren't listed anywhere, and can't be traded. Derived figures are called an **implied cost** or a **model value**, never a price or a quote.
