@@ -4,7 +4,7 @@ parent: Accounts and connections
 permalink: /accounts/kalshi/
 nav_order: 5
 section: accounts
-description: Your Kalshi portfolio, orders, settlements, and trading from Qwidgets.
+description: Your Kalshi portfolio, orders, settlements, and trading from Qwidgets, plus perps and Kalshi's demo exchange.
 ---
 
 # Kalshi account
@@ -40,3 +40,15 @@ The **Prediction Trade Ticket** widget does the same on a workspace, with a choi
 ## Settlements
 
 **Settlements** lists markets that have resolved: your side and quantity, total cost, fees, revenue, and when each settled. **Load More** reaches further back.
+
+## Perps
+
+The same Kalshi connection covers perps, once Kalshi has enabled them for your account. Perps are enabled by Kalshi, not in Qwidgets; until they are, the perps pages say so. With perps on, **Accounts** under **Perps** in the left-hand menu lists the account. See [Your perps portfolio]({{ '/perps/portfolio/' | relative_url }}) and [Trade perps]({{ '/perps/trading/' | relative_url }}).
+
+The perps portfolio shows the same account's prediction market cash, and the prediction market portfolio links to the perps one. Moving money between them happens at Kalshi.
+
+## Kalshi Demo Account
+
+Kalshi runs a demo exchange with play money. Connect it as a **Kalshi Demo Account**, with an API key created at demo.kalshi.co, to practice prediction market and perps trading from Qwidgets. A key from your real Kalshi account doesn't work there, and a demo key doesn't work on the real exchange.
+
+The demo exchange has its own prices and order books, separate from Kalshi's real exchange, even where a market has the same ticker. Pages reached through a demo account are marked as demo, and its trade confirmations say the order goes to the demo exchange. You can connect both a Kalshi account and a Kalshi Demo Account, and [Perps Markets]({{ '/perps/' | relative_url }}#perps-markets) then switches between the two exchanges.

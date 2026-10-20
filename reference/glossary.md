@@ -131,6 +131,29 @@ Prediction Distribution Builder
 Settlement
 : The payout when a market resolves.
 
+## Perps
+
+Basis
+: How far a perp's price sits above or below its index, as a percentage of the index.
+
+Cross subaccount
+: A Kalshi subaccount whose positions share its margin. The primary subaccount (0) is cross.
+
+Funding
+: A payment between longs and shorts each period that keeps a perp's price near its index. Positive rates mean longs pay shorts.
+
+Index
+: The price a perp tracks, such as a bitcoin or gold reference price.
+
+Isolated subaccount
+: A Kalshi subaccount holding one position with only its own margin behind it. Kalshi's app opens each position in one.
+
+Liquidation mark
+: The price Kalshi fires liquidations and exit triggers on.
+
+Perp
+: A perpetual future: a contract that tracks an index and never expires. On the AI compute pages, the perpetual is derived instead; see below.
+
 ## AI compute
 
 Derived

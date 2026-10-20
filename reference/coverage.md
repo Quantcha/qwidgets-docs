@@ -62,6 +62,22 @@ PredictIt and Manifold don't have order books. Manifold prices markets with an a
 
 The Kalshi trade ticket places limit orders to buy or sell Yes or No, at prices between $0.01 and $0.99. Orders can be good until canceled, immediate or cancel, or fill or kill, and you can change or cancel resting orders. Qwidgets never moves money in or out of your Kalshi account.
 
+## Perps
+
+[Perps]({{ '/perps/' | relative_url }}) are on Kalshi: every perpetual future Kalshi lists, on crypto, metals, stock indices, and oil.
+
+| | Kalshi |
+|---|---|
+| Markets, quotes, marks, funding, order book, and price history | Yes, no account needed |
+| Live quote updates | With a connected Kalshi account; otherwise every 10 seconds |
+| Account connection: positions by subaccount, balances, orders, fills, funding payments | Yes, once Kalshi has enabled perps for your account |
+| Trading | Yes |
+| Demo exchange, with play money | Yes, as a Kalshi Demo Account |
+
+### Perps trading
+
+Perps orders are sized in contracts and priced per contract. Every Kalshi perps order is a limit order: good until canceled (with an optional expiry), immediate or cancel, or fill or kill, with post-only and reduce-only options. A market order is sent as an immediate-or-cancel limit through the far side of the book. Positions can carry a bracket (stop-loss and take-profit) or a trailing stop, and resting orders can be changed, reduced, or canceled. Qwidgets never moves money in or out of your Kalshi account.
+
 ## AI compute
 
 [AI compute]({{ '/compute/' | relative_url }}) reads Kalshi's binary markets on GPU rental prices for the H200, B200, H100, A100, and RTX 5090, along with the index those markets settle against. Everything built from them is derived. No account is needed.
