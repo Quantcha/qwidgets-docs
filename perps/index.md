@@ -15,6 +15,8 @@ Perps in Qwidgets are on Kalshi. Kalshi quotes every perp per contract: a contra
 
 ## Perps Markets
 
+{% include shot.html id="perps-markets" alt="The Perps Markets page: Kalshi's perps in a table with price, 24-hour change, funding per interval and annualized, open interest, volume, and basis, filtered by asset class." %}
+
 **Perps Markets**, under **Perps** in the left-hand menu, lists every market with its:
 
 - **Price** and **24h** change, per contract.
@@ -27,11 +29,13 @@ Filter by asset class (**Crypto**, **Metals**, **Indices**, **Energy**) above th
 
 A clock beside a market's name means its index is stale: the market is open, but the index hasn't updated for more than 15 minutes. That happens when the index's own source is closed while the perp keeps trading, such as a stock index after the market close. Basis is dimmed until the index updates, because it's measured against the index.
 
-If you've connected a [Kalshi Demo Account]({{ '/accounts/kalshi/' | relative_url }}#kalshi-demo-account), **Exchanges** above the table switches between Kalshi and Kalshi's demo exchange. The demo exchange has its own prices and order books, separate from Kalshi's real one.
+If you've connected a [Kalshi Demo Account]({{ '/accounts/kalshi/' | relative_url }}#kalshi-demo-account), **Exchanges** above the table switches between Kalshi and Kalshi's demo exchange. The demo exchange has its own prices and order books, separate from Kalshi's real one. Until you've connected one, the same spot links to connecting it.
 
 ## A market's page
 
 Select a market to open its page:
+
+{% include shot.html id="perps-market" alt="A perp's market page: the quote with the index, basis, marks, and funding estimate, then the price chart and the order book." %}
 
 - **The quote:** the last price per contract and its day's change, the price per unit of the underlying, the **Index**, **Basis to index**, the **Settlement mark** and **Liquidation mark**, the best **Bid** and **Ask**, open interest, volume, the **Funding estimate** and its annualized rate, **Next funding**, and the **Premium index**.
 - **Price:** candles at one-minute, one-hour, or one-day intervals.
